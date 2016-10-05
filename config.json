@@ -8,6 +8,10 @@
       "slug": "hello-world" ,
       "difficulty": 1,
       "topics": []
+    },{
+      "slug": "leap",
+      "difficulty": 1,
+      "topics": []
     }
   ],
   "deprecated": [
