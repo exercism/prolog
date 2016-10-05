@@ -1,11 +1,10 @@
-
-binary_search(Lst, Val, Index):-
+binary_search(Lst, Val, Index) :-
     Left is 0,
     length(Lst, Length),
     Right is Length - 1,
     binary_search_fn(Lst, Val, Left, Right, Index).
 
-binary_search_fn(Lst, Val, Left, Right, Index):-
+binary_search_fn(Lst, Val, Left, Right, Index) :-
     not(Left > Right),
     Midpoint is floor((Left + Right)/2),
     nth0(Midpoint, Lst, ThisVal),
@@ -13,14 +12,14 @@ binary_search_fn(Lst, Val, Left, Right, Index):-
     NewLeft is Midpoint + 1,
     binary_search_fn(Lst, Val, NewLeft, Right, Index), !.
 
-binary_search_fn(Lst, Val, Left, Right, Index):-
+binary_search_fn(Lst, Val, Left, Right, Index) :-
     not(Left > Right),
     Midpoint is floor((Left + Right)/2),
     nth0(Midpoint, Lst, ThisVal),
     Val = ThisVal, 
     Index is Midpoint, !.
 
-binary_search_fn(Lst, Val, Left, Right, Index):-
+binary_search_fn(Lst, Val, Left, Right, Index) :-
     not(Left > Right),
     Midpoint is floor((Left + Right)/2),
     nth0(Midpoint, Lst, ThisVal),
