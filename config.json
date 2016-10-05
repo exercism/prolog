@@ -3,9 +3,12 @@
   "language": "prolog",
   "repository": "https://github.com/exercism/xprolog",
   "active": false,
-  "test_pattern": "TODO",
   "exercises": [
     {
+      "slug": "hello-world" ,
+      "difficulty": 1,
+      "topics": []
+    },{
       "slug": "leap",
       "difficulty": 1,
       "topics": []
