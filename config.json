@@ -3,12 +3,15 @@
   "language": "prolog",
   "repository": "https://github.com/exercism/xprolog",
   "active": false,
-  "test_pattern": "TODO",
   "exercises": [
     {
-        "slug": "sum-of-multiples",
-        "difficulty": 1,
-        "topics": []
+      "slug": "hello-world" ,
+      "difficulty": 1,
+      "topics": []
+    },{
+      "slug": "sum-of-multiples",
+      "difficulty": 1,
+      "topics": []
     }
   ],
   "deprecated": [

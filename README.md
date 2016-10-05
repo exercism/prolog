@@ -1,4 +1,5 @@
 # Exercism prolog Track
+![build status](https://travis-ci.org/exercism/xprolog.svg?branch=master)
 
 Exercism exercises in prolog.
 
