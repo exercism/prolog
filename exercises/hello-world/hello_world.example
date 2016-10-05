@@ -1,0 +1,5 @@
+hello_world('Hello World!').
+    
+hello_world(Name, Phrase) :-
+    atom_concat('Hello ', Name, HelloName),
+    atom_concat(HelloName, '!', Phrase).
