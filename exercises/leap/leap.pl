@@ -1,2 +1,1 @@
-
-leap(N).
+leap(Year).
