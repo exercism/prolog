@@ -1,4 +1,3 @@
+square(SquareNumber, Value).
 
-square(N, Val).
-
-total(N).
+total(Value).
