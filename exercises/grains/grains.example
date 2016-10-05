@@ -1,0 +1,17 @@
+
+square(1, Val):- Val is 1, !.
+square(N, Val):-
+    N > 1, not(N > 64),
+    M is N - 1,
+    square(M, NewVal),
+    Val is 2 * NewVal.
+
+total(N):- total_fn(N, 64).
+
+total_fn(N, 0):- N is 0, !.
+total_fn(N, M):-
+    NewM is M - 1,
+    total_fn(NewN, NewM),
+    square(M, Square),
+    N is NewN + Square.
+    
