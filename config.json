@@ -23,6 +23,11 @@
       "slug": "leap",
       "difficulty": 1,
       "topics": []
+    },
+    {
+      "slug": "triangle",
+      "difficulty": 1,
+      "topics": []
     }
   ],
   "deprecated": [
