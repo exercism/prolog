@@ -1,7 +1,8 @@
 :- begin_tests(anagram).
 
     test(no_matches) :-
-        anagram("diaper", [ "hello", "world", "zombies", "pants"], []).
+        anagram("diaper", [ "hello", "world", "zombies", "pants"], Result),
+        is_list(Result).
 
     test(detects_simple_anagram) :-
         anagram("ant", ["tan", "stand", "at"], ["tan"]).
