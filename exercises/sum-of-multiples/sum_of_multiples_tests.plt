@@ -1,7 +1,8 @@
 :- begin_tests(sum_of_multiples).
 
     test(low_limit) :-
-        sum_of_multiples([3, 5], 1, 0).
+        sum_of_multiples([3, 5], 1, Result),
+        Result == 0.
 
     test(just_one_multiple) :-
         sum_of_multiples([3, 5], 4, 3).
