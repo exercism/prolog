@@ -1,1 +1,1 @@
-leap(Year).
+leap(0).
