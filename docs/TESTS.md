@@ -25,6 +25,6 @@ In both cases, replace `hello_world.pl` and `hello_world_tests.plt` with the
 name of the exercise you are implementing.
 
 When you first begin an exercise, only the first test will run. The rest have
-been skipped by adding `condition(pedning)` to the `test` goal. Once the first
-test passes, un-skip the next test by changing `pending` in `condition(pedning)`
+been skipped by adding `condition(pending)` to the `test` goal. Once the first
+test passes, un-skip the next test by changing `pending` in `condition(pending)`
 to `true`. Repeat for each test until they are all running and passing.
