@@ -45,7 +45,7 @@ file for the real implementation. The example solution should have the
   This allows the tests to be run on CI and configures tests to be skipped with
   the `condition(pending)` flag.
 
-```prolog 
+```prolog
 pending :-
     current_prolog_flag(argv, ['--all'|_]).
 pending :-
@@ -58,7 +58,7 @@ pending :-
   first test should have `condition(true)` as an example of how to change the
   tests to run. Here are the first two tests in the `hello_world` exercise.
 
-```prolog 
+```prolog
 test(hello_world, condition(true)) :-
     hello_world('Hello World!').
 
@@ -74,3 +74,7 @@ with `bin/build.sh`. Please run this command before submitting your PR.
 The MIT License (MIT)
 
 Copyright (c) 2016 Katrina Owen, _@kytrinyx.com
+
+### [SWI Prolog icon](https://github.com/exercism/xprolog/tree/master/img/icon.png)
+
+The SWI Prolog "Owlie" logo is owned by the SWI Prolog maintainers and released under the Simplified BSD license. We have adapted it for use on Exercism, changing the colour scheme, with [the express permission of `anne@swiprolog.org`](https://github.com/exercism/xprolog/issues/1#issuecomment-283122027).
