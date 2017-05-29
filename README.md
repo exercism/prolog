@@ -69,11 +69,6 @@ test(hello_world_with_a_name, condition(pending)) :-
 All the tests for xProlog exercises can be run from the top level of the repo
 with `bin/build.sh`. Please run this command before submitting your PR.
 
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2016 Katrina Owen, _@kytrinyx.com
 
 ### [SWI Prolog icon](https://github.com/exercism/xprolog/tree/master/img/icon.png)
 
