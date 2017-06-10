@@ -5,68 +5,85 @@
   "active": false,
   "exercises": [
     {
-      "slug": "hello-world" ,
+      "slug": "hello-world",
       "difficulty": 1,
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "slug": "sum-of-multiples",
       "difficulty": 1,
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "slug": "binary",
       "difficulty": 1,
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "slug": "leap",
       "difficulty": 1,
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "slug": "triangle",
       "difficulty": 1,
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "slug": "space-age",
       "difficulty": 1,
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "slug": "grains",
       "difficulty": 1,
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
-      "slug": "nucleotide-count" ,
+      "slug": "nucleotide-count",
       "difficulty": 1,
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "slug": "hamming",
       "difficulty": 1,
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "slug": "anagram",
       "difficulty": 1,
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "slug": "rna-transcription",
       "difficulty": 1,
-      "topics": []
+      "topics": [
+
+      ]
     }
   ],
   "deprecated": [
 
-  ],
-  "ignored": [
-    "bin",
-    "img",
-    "docs"
   ],
   "foregone": [
 
