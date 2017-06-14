@@ -13,13 +13,13 @@ pending :-
     write('\nA TEST IS PENDING!\n'),
     fail.
 
-:- begin_tests(hello_word).
+:- begin_tests(hello_world).
 
     test(hello_world, condition(true)) :-
         hello_world('Hello World!').
 
     % Once the first test passes, un-skip the following test by
-    % changing `pending` in `condition(pedning)` to `true`.
+    % changing `pending` in `condition(pending)` to `true`.
     % Repeat for each test until they are all passing.
 
     test(hello_world_with_a_name, condition(pending)) :-
@@ -28,4 +28,4 @@ pending :-
     test(hello_world_another_name, condition(pending)) :-
         hello_world('Bob', 'Hello Bob!').
 
-:- end_tests(hello_word).
+:- end_tests(hello_world).
