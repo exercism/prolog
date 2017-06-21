@@ -1,11 +1,11 @@
-# xProlog
-![build status](https://travis-ci.org/exercism/xprolog.svg?branch=master)
+# Exercism Prolog Track
+![build status](https://travis-ci.org/exercism/prolog.svg?branch=master)
 
 Exercism Exercises in Prolog
 
 ## Setup
 
-See [INSTALLATION.md](https://github.com/exercism/xprolog/blob/master/docs/INSTALLATION.md)
+See [INSTALLATION.md](https://github.com/exercism/prolog/blob/master/docs/INSTALLATION.md)
 
 ##Contributing
 
@@ -66,10 +66,10 @@ test(hello_world_with_a_name, condition(pending)) :-
     hello_world('Alice', 'Hello Alice!').
 ```
 
-All the tests for xProlog exercises can be run from the top level of the repo
+All the tests for Exercism Prolog Track exercises can be run from the top level of the repo
 with `bin/build.sh`. Please run this command before submitting your PR.
 
 
-### [SWI Prolog icon](https://github.com/exercism/xprolog/tree/master/img/icon.png)
+### [SWI Prolog icon](https://github.com/exercism/prolog/tree/master/img/icon.png)
 
-The SWI Prolog "Owlie" logo is owned by the SWI Prolog maintainers and released under the Simplified BSD license. We have adapted it for use on Exercism, changing the colour scheme, with [the express permission of `anne@swiprolog.org`](https://github.com/exercism/xprolog/issues/1#issuecomment-283122027).
+The SWI Prolog "Owlie" logo is owned by the SWI Prolog maintainers and released under the Simplified BSD license. We have adapted it for use on Exercism, changing the colour scheme, with [the express permission of `anne@swiprolog.org`](https://github.com/exercism/prolog/issues/1#issuecomment-283122027).
