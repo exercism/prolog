@@ -8,5 +8,5 @@ before_script:
 
 script:
   - bin/fetch-configlet
-  - bin/configlet .
+  - bin/configlet lint .
   - bin/build.sh
