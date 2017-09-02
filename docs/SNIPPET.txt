@@ -1,0 +1,6 @@
+hello(Name, Greeting) :-
+  atom_concat('Hello, ', Name, Prefix),
+  atom_concat(Prefix, '!', Greeting).
+
+?- hello('World', Greeting),
+   write(Greeting).
