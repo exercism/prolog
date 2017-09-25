@@ -7,7 +7,7 @@ Exercism Exercises in Prolog
 
 See [INSTALLATION.md](https://github.com/exercism/prolog/blob/master/docs/INSTALLATION.md)
 
-##Contributing
+## Contributing
 
 Thank you so much for contributing! :tada:
 
