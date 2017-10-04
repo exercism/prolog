@@ -1,0 +1,12 @@
+% amount of ocurrences of X in a list.
+count(_,[],0) :- !.
+count(X,[X|T],Y):- count(X,T,Z), Y is 1+Z, !.
+count(X,[X1|T],Z):- X1\=X,count(X,T,Z).
+
+% returns true if X is at most, 1 time in L.
+atMost1(X,L) :- count(X,L,N), (N =:= 1, !; N =:= 0, !).
+
+% returns true if every letter of the engilsh alphabet is at most 1 time in S.
+isogram(S) :-
+  numlist(97, 122, Abc), string_lower(S, Ns),
+  atom_codes(Ns, L), forall(member(C, Abc), atMost1(C, L)).
