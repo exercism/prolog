@@ -15,8 +15,11 @@ pending :-
 
 :- begin_tests(create_tests).
 
-    test(valid_position, condition(true)) :-
-         create((2,2)).
+    test(create_in_center, condition(true)) :-
+      create((3,3)).
+
+    test(valid_position, condition(pending)) :-
+      create((2,2)).
 
     test(must_have_positive_row, [fail, condition(pending)]) :-
       create((-2,2)).
