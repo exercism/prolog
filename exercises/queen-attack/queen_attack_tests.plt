@@ -18,16 +18,16 @@ pending :-
     test(valid_position, condition(true)) :-
          create((2,2)).
 
-    test(must_have_positive_row, condition(false)) :-
+    test(must_have_positive_row, [fail, condition(pending)]) :-
       create((-2,2)).
 
-    test(row_smaller_than_board_size, condition(false)) :-
+    test(row_smaller_than_board_size, [fail, condition(pending)]) :-
       create((8,4)).
 
-    test(must_have_positive_column, condition(false)) :-
+    test(must_have_positive_column, [fail, condition(pending)]) :-
       create((2,-2)).
 
-    test(column_smaller_than_board_size, condition(false)) :-
+    test(column_smaller_than_board_size, [fail, condition(pending)]) :-
       create((4,8)).
 
 :- end_tests(create_tests).
@@ -35,25 +35,25 @@ pending :-
 
 :- begin_tests(attack_tests).
 
-    test(cant_attack, condition(false)) :-
+    test(cant_attack, [fail, condition(pending)]) :-
       attack((2,4), (6,6)).
 
-    test(attack_on_same_row, condition(true)) :-
+    test(attack_on_same_row, condition(pending)) :-
       attack((2,4), (2,6)).
 
-    test(attack_same_column, condition(true)) :-
+    test(attack_same_column, condition(pending)) :-
       attack((4,5), (2,5)).
 
-    test(attack_first_diagonal, condition(true)) :-
+    test(attack_first_diagonal, condition(pending)) :-
       attack((2,2), (0,4)).
 
-    test(attack_second_diagonal, condition(true)) :-
+    test(attack_second_diagonal, condition(pending)) :-
       attack((2,2), (3,1)).
 
-    test(attack_third_diagonal, condition(true)) :-
+    test(attack_third_diagonal, condition(pending)) :-
       attack((2,2), (1,1)).
 
-    test(attack_fourth_diagonal, condition(true)) :-
+    test(attack_fourth_diagonal, condition(pending)) :-
       attack((2,2), (5,5)).
 
 :- end_tests(attack_tests).
