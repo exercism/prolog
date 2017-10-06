@@ -4,7 +4,7 @@ column((_, Y), (_, V)) :- Y =:= V.
 
 row((X, _), (U, _)):- X =:= U.
 
-diagonal((X, Y), (U, V)) :-  (X-Y) =:= (U-V); (X+Y) =:= (U+V).
+diagonal((X, Y), (U, V)) :-  (X-Y) =:= (U-V), !; (X+Y) =:= (U+V).
 
 attack((X, Y), (U, V)) :-
   column((X, Y), (U, V)), !;
