@@ -9,31 +9,31 @@ pending :-
     test(empty_string, condition(true)) :-
       isogram("").
 
-    test(only_lower_case_characters, condition(true)) :-
+    test(only_lower_case_characters, condition(pending)) :-
       isogram("isogram").
 
-    test(one_duplicated_character, condition(false)) :-
+    test(one_duplicated_character, [fail, condition(pending)]) :-
       isogram("eleven").
 
-    test(longest_reported_english_isogram, condition(true)) :-
+    test(longest_reported_english_isogram, condition(pending)) :-
       isogram("subdermatoglyphic").
 
-    test(duplicated_character_in_mixed_case, condition(false)) :-
+    test(duplicated_character_in_mixed_case, [fail, condition(pending)]) :-
       isogram("Alphabet").
 
-    test(hypothetical_isogrammic_word_with_hyphen, condition(true)) :-
+    test(hypothetical_isogrammic_word_with_hyphen, condition(pending)) :-
       isogram("thumbscrew-japingly").
 
-    test(duplicated_non_letter_character, condition(true)) :-
+    test(duplicated_non_letter_character, condition(pending)) :-
       isogram("Hjelmqvist-Gryb-Zock-Pfund-Wax").
 
-    test(name_that_is_an_isogram, condition(true)) :-
+    test(name_that_is_an_isogram, condition(pending)) :-
       isogram("Emily Jung Schwartzkopf").
 
-    test(duplicated_character_in_the_middle, condition(false)) :-
+    test(duplicated_character_in_the_middle, [fail, condition(pending)]) :-
       isogram("accentor").
 
-    test(largest_pure_letter_characters_isogram, condition(true)) :-
+    test(largest_pure_letter_characters_isogram, condition(pending)) :-
       isogram("AbcdEfghIjkLMNopQrStUvWxyZ.").
 
 :- end_tests(isogram).
