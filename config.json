@@ -13,6 +13,16 @@
       ]
     },
     {
+      "uuid": "3l059uca-57sp-24ol-ym06-91e5r1fis8ba",
+      "slug": "complex-numbers",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+
+      ]
+    },
+    {
       "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163",
       "slug": "sum-of-multiples",
       "core": false,
