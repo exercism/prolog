@@ -1,119 +1,95 @@
 {
-  "language": "Prolog",
   "active": false,
   "exercises": [
     {
-      "uuid": "68a85ec5-acdd-4f4f-9b9e-a5e39f1f7ac0",
+      "core": false,
+      "difficulty": 1,
       "slug": "hello-world",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "68a85ec5-acdd-4f4f-9b9e-a5e39f1f7ac0"
     },
     {
-      "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163",
+      "core": false,
+      "difficulty": 1,
       "slug": "sum-of-multiples",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163"
     },
     {
-      "uuid": "ee8e835f-1cbf-4ff4-a8f2-c641bc4045cc",
+      "core": false,
+      "difficulty": 1,
       "slug": "binary",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "ee8e835f-1cbf-4ff4-a8f2-c641bc4045cc"
     },
     {
-      "uuid": "9b6c4536-8f84-46cd-80cc-e80d77803a7b",
+      "core": false,
+      "difficulty": 1,
       "slug": "leap",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "9b6c4536-8f84-46cd-80cc-e80d77803a7b"
     },
     {
-      "uuid": "a3c467cd-b2f2-43a8-9a81-d60490645c59",
+      "core": false,
+      "difficulty": 1,
       "slug": "triangle",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "a3c467cd-b2f2-43a8-9a81-d60490645c59"
     },
     {
-      "uuid": "2b72a411-b07f-4e89-bfdf-2ed3fce256fe",
+      "core": false,
+      "difficulty": 1,
       "slug": "space-age",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "2b72a411-b07f-4e89-bfdf-2ed3fce256fe"
     },
     {
-      "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd",
+      "core": false,
+      "difficulty": 1,
       "slug": "grains",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd"
     },
     {
-      "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
+      "core": false,
+      "difficulty": 1,
       "slug": "nucleotide-count",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71"
     },
     {
-      "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
+      "core": false,
+      "difficulty": 1,
       "slug": "hamming",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "8449608f-b55e-452f-b65a-720914dde9af"
     },
     {
-      "uuid": "3e059acb-37dc-44ed-bd06-91c5e1fdd8ba",
+      "core": false,
+      "difficulty": 1,
       "slug": "anagram",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "3e059acb-37dc-44ed-bd06-91c5e1fdd8ba"
     },
     {
-      "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1",
-      "slug": "rna-transcription",
       "core": false,
-      "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "slug": "rna-transcription",
+      "topics": null,
+      "unlocked_by": null,
+      "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1"
     }
   ],
-  "foregone": [
-
-  ]
+  "foregone": [],
+  "language": "Prolog"
 }
