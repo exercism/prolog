@@ -1,10 +1,6 @@
-% amount of ocurrences of X in a list.
-count(_, [],    0) :- !.
-count(X, [X|T], Y) :- count(X, T, Z), Y is Z+1, !.
-count(X, [H|T], Z) :- H\=X, count(X, T, Z).
-
 % returns true if X is at most, 1 time in L.
-atMost1(X, XS) :- count(X, XS, N), (N =:= 1 ; N =:= 0).
+atMost1(X, XS) :-
+ findall(E, (member(E, XS), X = E), O), length(O, LO), LO =< 1.
 
 % returns true if every letter of the engilsh alphabet is at most 1 time in S.
 isogram(S) :-
