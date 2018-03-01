@@ -1,0 +1,1 @@
+isogram(false).

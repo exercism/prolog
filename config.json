@@ -83,6 +83,16 @@
       ]
     },
     {
+      "uuid": "10ed3b8e-d093-41e2-9f2a-4e5fc3172e71",
+      "slug": "isogram",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+
+      ]
+    },
+    {
       "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
       "slug": "hamming",
       "core": false,
