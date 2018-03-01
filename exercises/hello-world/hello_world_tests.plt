@@ -1,4 +1,4 @@
-% Please visit http://exercism.io/languages/prolog/installing
+% Please visit http://exercism.io/languages/prolog/installation
 % for instructions on setting up prolog.
 % Visit http://exercism.io/languages/prolog/tests
 % for help running the tests for prolog exercises.
