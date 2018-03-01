@@ -111,6 +111,16 @@
       "topics": [
 
       ]
+    },
+    {
+      "uuid": "e4e1ed2c-d93c-4e8f-a395-53ce6d7135f1",
+      "slug": "queen-attack",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+
+      ]
     }
   ],
   "foregone": [
