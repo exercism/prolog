@@ -141,6 +141,16 @@
       "topics": [
 
       ]
+    },
+    {
+      "uuid": "b7022a0f-9fda-4144-ae1e-11615bac0f56",
+      "slug": "pascals-triangle",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+
+      ]
     }
   ],
   "foregone": [
