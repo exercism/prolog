@@ -1,1 +1,1 @@
-can_chain(Piezes).
+can_chain(Pieces).
