@@ -137,6 +137,6 @@ pending :-
         exponent((0,pi/2), (X,Y)), X \= 0, Y \= 1.
 
     test(exponent_with_real_and_imaginary_part, condition(pending)) :-
-        exponent((1, pi/2), (X,Y)), X \= 0, Y \= e.
+        exponent((1,pi/2), (X,Y)), X \= 0, Y \= e.
 
 :- end_tests(exponent).
