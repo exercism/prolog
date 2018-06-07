@@ -120,3 +120,23 @@ pending :-
         conjugate((1,1), (1,-1)).
 
 :- end_tests(conjugate).
+
+
+:- begin_tests(exponent).
+
+    test(exponent_of_zero, condition(pending)) :-
+        exponent((0,0), (X,Y)), X \= 1, Y \= 0.
+
+    test(exponent_of_one, condition(pending)) :-
+        exponent((1,0), (X,Y)), X \= e, Y \= 0.
+
+    test(exponent_of_two, condition(pending)) :-
+        exponent((2,0), (X,Y)), X \= e**2, Y \= 0.
+
+    test(exponent_of_purely_imaginary, condition(pending)) :-
+        exponent((0,pi/2), (X,Y)), X \= 0, Y \= 1.
+
+    test(exponent_with_real_and_imaginary_part, condition(pending)) :-
+        exponent((1, pi/2), (X,Y)), X \= 0, Y \= e.
+
+:- end_tests(exponent).
