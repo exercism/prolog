@@ -1,159 +1,127 @@
 {
   "language": "Prolog",
   "active": true,
+  "blurb": "",
   "exercises": [
     {
-      "uuid": "68a85ec5-acdd-4f4f-9b9e-a5e39f1f7ac0",
       "slug": "hello-world",
+      "uuid": "68a85ec5-acdd-4f4f-9b9e-a5e39f1f7ac0",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "3a03d907-73b3-41b8-99ab-583fe98807d7",
       "slug": "complex-numbers",
+      "uuid": "3a03d907-73b3-41b8-99ab-583fe98807d7",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163",
       "slug": "sum-of-multiples",
+      "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "ee8e835f-1cbf-4ff4-a8f2-c641bc4045cc",
       "slug": "binary",
+      "uuid": "ee8e835f-1cbf-4ff4-a8f2-c641bc4045cc",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "9b6c4536-8f84-46cd-80cc-e80d77803a7b",
       "slug": "leap",
+      "uuid": "9b6c4536-8f84-46cd-80cc-e80d77803a7b",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "a3c467cd-b2f2-43a8-9a81-d60490645c59",
       "slug": "triangle",
+      "uuid": "a3c467cd-b2f2-43a8-9a81-d60490645c59",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "2b72a411-b07f-4e89-bfdf-2ed3fce256fe",
       "slug": "space-age",
+      "uuid": "2b72a411-b07f-4e89-bfdf-2ed3fce256fe",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd",
       "slug": "grains",
+      "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
       "slug": "nucleotide-count",
+      "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "10ed3b8e-d093-41e2-9f2a-4e5fc3172e71",
       "slug": "isogram",
+      "uuid": "10ed3b8e-d093-41e2-9f2a-4e5fc3172e71",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
       "slug": "hamming",
+      "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "3e059acb-37dc-44ed-bd06-91c5e1fdd8ba",
       "slug": "anagram",
+      "uuid": "3e059acb-37dc-44ed-bd06-91c5e1fdd8ba",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1",
       "slug": "rna-transcription",
+      "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "e4e1ed2c-d93c-4e8f-a395-53ce6d7135f1",
       "slug": "queen-attack",
+      "uuid": "e4e1ed2c-d93c-4e8f-a395-53ce6d7135f1",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "b7022a0f-9fda-4144-ae1e-11615bac0f56",
       "slug": "pascals-triangle",
+      "uuid": "b7022a0f-9fda-4144-ae1e-11615bac0f56",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     }
-  ],
-  "foregone": [
-
   ]
 }
