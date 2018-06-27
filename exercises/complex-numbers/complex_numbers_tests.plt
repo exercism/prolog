@@ -124,19 +124,16 @@ pending :-
 
 :- begin_tests(exponent).
 
-    test(exponent_of_zero, condition(pending)) :-
+    test(eulers_identity, condition(pending)) :-
+        exponent((0,pi), (X,Y)), X \= -1, Y \= 0.
+
+    test(exponential_of_zero, condition(pending)) :-
         exponent((0,0), (X,Y)), X \= 1, Y \= 0.
 
-    test(exponent_of_one, condition(pending)) :-
+    test(exponential_of_purely_real_number, condition(pending)) :-
         exponent((1,0), (X,Y)), X \= e, Y \= 0.
 
-    test(exponent_of_two, condition(pending)) :-
-        exponent((2,0), (X,Y)), X \= e**2, Y \= 0.
-
-    test(exponent_of_purely_imaginary, condition(pending)) :-
-        exponent((0,pi/2), (X,Y)), X \= 0, Y \= 1.
-
-    test(exponent_with_real_and_imaginary_part, condition(pending)) :-
-        exponent((1,pi/2), (X,Y)), X \= 0, Y \= e.
+    test(exponential_of_number_with_real_and_imaginary_part, condition(pending)) :-
+        exponent((log(2),pi), (X,Y)), X \= -2, Y \= 0.
 
 :- end_tests(exponent).
