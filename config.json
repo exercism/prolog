@@ -1,3 +1,4 @@
+
 {
   "language": "Prolog",
   "active": true,
@@ -119,6 +120,14 @@
     {
       "slug": "pascals-triangle",
       "uuid": "b7022a0f-9fda-4144-ae1e-11615bac0f56",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    }  
+    {
+      "uuid": "d2d980e7-ff66-4430-b653-9352d4416889",
+      "slug": "dominoes",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
