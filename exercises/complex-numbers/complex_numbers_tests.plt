@@ -4,10 +4,37 @@ pending :-
     write('\nA TEST IS PENDING!\n'),
     fail.
 
+:- begin_tests(real_part).
+
+    test(real_part_of_a_purely_real_number, condition(true)) :-
+        real((1,0),1).
+
+    test(real_part_of_a_purely_imaginary_number, condition(pending)) :-
+        real((0,1),0).
+
+    test(real_part_of_a_number_with_real_and_imaginary_part, condition(pending)) :-
+        real((1,2),1).
+
+:- end_tests(real_part).
+
+
+:- begin_tests(imaginary_part).
+
+    test(imaginary_part_of_a_purely_real_number, condition(pending)) :-
+        imaginary((1,0),0).
+
+    test(imaginary_part_of_a_purely_imaginary_number, condition(pending)) :-
+        imaginary((0,1),1).
+
+    test(imaginary_part_of_a_number_with_real_and_imaginary_part, condition(pending)) :-
+        imaginary((1,2),2).
+
+:- end_tests(imaginary_part).
+
 
 :- begin_tests(addition).
 
-    test(add_purely_real_numbers, condition(true)) :-
+    test(add_purely_real_numbers, condition(pending)) :-
         add((1,0), (2,0), (3,0)).
 
     test(add_purely_imaginary_numbers, condition(pending)) :-
@@ -93,31 +120,3 @@ pending :-
         conjugate((1,1), (1,-1)).
 
 :- end_tests(conjugate).
-
-
-:- begin_tests(real_part).
-
-    test(real_part_of_a_purely_real_number, condition(true)) :-
-        real((1,0),1).
-
-    test(real_part_of_a_purely_imaginary_number, condition(true)) :-
-        real((0,1),0).
-
-    test(real_part_of_a_number_with_real_and_imaginary_part, condition(true)) :-
-        real((1,2),1).
-
-:- end_tests(real_part).
-
-
-:- begin_tests(imaginary_part).
-
-    test(imagianry_part_of_a_purely_real_number, condition(true)) :-
-        imaginary((1,0),0).
-
-    test(imaginary_part_of_a_purely_imaginary_number, condition(true)) :-
-        imaginary((0,1),1).
-
-    test(imaginary_part_of_a_number_with_real_and_imaginary_part, condition(true)) :-
-        imaginary((1,2),2).
-
-:- end_tests(imaginary_part).
