@@ -1,7 +1,7 @@
 {
   "language": "Prolog",
   "active": true,
-  "blurb": "",
+  "blurb": "rolog is a general-purpose logic programming language associated with artificial intelligence and computational linguistics.",
   "exercises": [
     {
       "slug": "hello-world",
