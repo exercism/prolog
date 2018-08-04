@@ -18,7 +18,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": []
+      "topics": [
+        "math"
+      ]
     },
     {
       "slug": "sum-of-multiples",
@@ -26,7 +28,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": []
+      "topics": [
+        "math"
+      ]
     },
     {
       "slug": "binary",
@@ -34,7 +38,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": []
+      "topics": [
+        "math"
+      ]
     },
     {
       "slug": "leap",
@@ -122,7 +128,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": []
+      "topics": [
+        "math"
+      ]
     },
     {
       "slug": "dominoes",
