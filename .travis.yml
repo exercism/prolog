@@ -4,7 +4,7 @@ install:
 before_script:
   - sudo apt-add-repository ppa:swi-prolog/devel -y
   - sudo apt-get update -q
-  - sudo apt-get install swi-prolog-nox
+  - sudo apt-get install --allow-unauthenticated swi-prolog-nox
 
 script:
   - bin/fetch-configlet
