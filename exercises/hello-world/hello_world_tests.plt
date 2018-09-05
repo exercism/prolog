@@ -1,6 +1,6 @@
-% Please visit http://exercism.io/languages/prolog/installation
+% Please visit https://exercism.io/tracks/prolog/installation
 % for instructions on setting up prolog.
-% Visit http://exercism.io/languages/prolog/tests
+% Visit https://exercism.io/tracks/prolog/tests
 % for help running the tests for prolog exercises.
 
 % The goal below allows tests to be skipped
