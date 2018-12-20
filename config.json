@@ -133,6 +133,14 @@
       ]
     },
     {
+      "slug": "spiral-matrix",
+      "uuid": "77b99980-1922-41b8-8c44-fc964725e9a4",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
       "slug": "dominoes",
       "uuid": "0dd8e1c8-d94e-4977-b9c8-ad5b0ff33f98",
       "core": false,
