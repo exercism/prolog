@@ -1,0 +1,3 @@
+# file extention for Prolog Test files confuses GitHub linguist
+# explicitly set language for .plt extention
+*.plt linguist-language=Prolog
