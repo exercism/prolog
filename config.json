@@ -153,7 +153,7 @@
       "uuid": "27856806-0dee-409f-8047-357de07b914d",
       "core": false,
       "unlocked_by": null,
-      "difficulty": 3,
+      "difficulty": 1,
       "topics": [
         "binary_trees",
         "recursion",
