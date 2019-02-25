@@ -22,10 +22,4 @@ pending :-
     % changing `pending` in `condition(pending)` to `true`.
     % Repeat for each test until they are all passing.
 
-    test(hello_world_with_a_name, condition(pending)) :-
-        hello_world('Alice', 'Hello Alice!').
-
-    test(hello_world_another_name, condition(pending)) :-
-        hello_world('Bob', 'Hello Bob!').
-
 :- end_tests(hello_world).
