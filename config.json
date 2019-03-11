@@ -47,14 +47,6 @@
       ]
     },
     {
-      "slug": "hamming",
-      "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
       "slug": "rna-transcription",
       "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1",
       "core": true,
@@ -62,13 +54,6 @@
       "difficulty": 1,
       "topics": []
     },
-    {
-      "slug": "nucleotide-count",
-      "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
     },
     {
       "slug": "anagram",
@@ -89,14 +74,6 @@
       ]
     },
     {
-      "slug": "spiral-matrix",
-      "uuid": "77b99980-1922-41b8-8c44-fc964725e9a4",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
       "slug": "dominoes",
       "uuid": "0dd8e1c8-d94e-4977-b9c8-ad5b0ff33f98",
       "core": true,
@@ -107,7 +84,7 @@
     {
       "slug": "retree",
       "uuid": "27856806-0dee-409f-8047-357de07b914d",
-      "core": true,
+      "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
@@ -115,6 +92,29 @@
         "recursion",
         "tree_traversals"
       ]
+    },
+    {
+      "slug": "spiral-matrix",
+      "uuid": "77b99980-1922-41b8-8c44-fc964725e9a4",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "nucleotide-count",
+      "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    {
+      "slug": "hamming",
+      "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
     },
     {
       "slug": "complex-numbers",
