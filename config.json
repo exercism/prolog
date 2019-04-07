@@ -6,8 +6,112 @@
     {
       "slug": "hello-world",
       "uuid": "68a85ec5-acdd-4f4f-9b9e-a5e39f1f7ac0",
-      "core": false,
+      "core": true,
       "auto_approve": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "queen-attack",
+      "uuid": "e4e1ed2c-d93c-4e8f-a395-53ce6d7135f1",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "triangle",
+      "uuid": "a3c467cd-b2f2-43a8-9a81-d60490645c59",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "isogram",
+      "uuid": "10ed3b8e-d093-41e2-9f2a-4e5fc3172e71",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "binary",
+      "uuid": "ee8e835f-1cbf-4ff4-a8f2-c641bc4045cc",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "math"
+      ]
+    },
+    {
+      "slug": "rna-transcription",
+      "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "anagram",
+      "uuid": "3e059acb-37dc-44ed-bd06-91c5e1fdd8ba",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "pascals-triangle",
+      "uuid": "b7022a0f-9fda-4144-ae1e-11615bac0f56",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "math"
+      ]
+    },
+    {
+      "slug": "dominoes",
+      "uuid": "0dd8e1c8-d94e-4977-b9c8-ad5b0ff33f98",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "satellite",
+      "uuid": "27856806-0dee-409f-8047-357de07b914d",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "binary_trees",
+        "recursion",
+        "tree_traversals"
+      ]
+    },
+    {
+      "slug": "spiral-matrix",
+      "uuid": "77b99980-1922-41b8-8c44-fc964725e9a4",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "nucleotide-count",
+      "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "hamming",
+      "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
+      "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": []
@@ -33,26 +137,8 @@
       ]
     },
     {
-      "slug": "binary",
-      "uuid": "ee8e835f-1cbf-4ff4-a8f2-c641bc4045cc",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
-    },
-    {
       "slug": "leap",
       "uuid": "9b6c4536-8f84-46cd-80cc-e80d77803a7b",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "triangle",
-      "uuid": "a3c467cd-b2f2-43a8-9a81-d60490645c59",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -73,92 +159,6 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": []
-    },
-    {
-      "slug": "nucleotide-count",
-      "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "isogram",
-      "uuid": "10ed3b8e-d093-41e2-9f2a-4e5fc3172e71",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "hamming",
-      "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "anagram",
-      "uuid": "3e059acb-37dc-44ed-bd06-91c5e1fdd8ba",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "rna-transcription",
-      "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "queen-attack",
-      "uuid": "e4e1ed2c-d93c-4e8f-a395-53ce6d7135f1",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "pascals-triangle",
-      "uuid": "b7022a0f-9fda-4144-ae1e-11615bac0f56",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
-    },
-    {
-      "slug": "spiral-matrix",
-      "uuid": "77b99980-1922-41b8-8c44-fc964725e9a4",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "dominoes",
-      "uuid": "0dd8e1c8-d94e-4977-b9c8-ad5b0ff33f98",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "satellite",
-      "uuid": "27856806-0dee-409f-8047-357de07b914d",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "binary_trees",
-        "recursion",
-        "tree_traversals"
-      ]
     }
   ]
 }
