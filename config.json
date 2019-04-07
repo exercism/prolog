@@ -153,8 +153,8 @@
       "topics": []
     },
     {
-      "slug": "grains",
-      "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd",
+      "slug": "satellite",
+      "uuid": "27856806-0dee-409f-8047-357de07b914d",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
