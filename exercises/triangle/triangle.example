@@ -11,8 +11,9 @@ triangle(OtherSide, SideEq, SideEq, "isosceles") :-
     valid_triangle(SideEq, SideEq, OtherSide), !.
 
 triangle(Side1, Side2, Side3, "scalene") :-
+    \+ triangle(Side1, Side2, Side3, "equilateral"),
+    \+ triangle(Side1, Side2, Side3, "isosceles"),
     valid_triangle(Side1, Side2, Side3).
-    
 
 valid_triangle(Side1, Side2, Side3) :-
     Add23 is Side2 + Side3,
