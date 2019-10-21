@@ -5,13 +5,16 @@
 :- use_module(library(dcg/basics)).
 
 % wordy(+Question, -Answer)
-%
+% predicate with takes an instantiated string `Question` representing a simple mathematical word problem.
+% uses phrase and a DCG to unify a list of terms with a character list.  The list of terms is then reduced
+% to the integer answer, which is returned.
 wordy(Question, Answer) :-
-  string_codes(Question, CQuestion),
-  phrase(parse(Ts), CQuestion),
+  string_codes(Question, QuestionChars),
+  phrase(parse(Ts), QuestionChars),
   !,
   compute(Ts, Answer).
 
+% compute(+InfixOperationQueue, -Answer)
 compute([T | Ts], Answer) :- compute(Ts, T, Answer).
 
 compute([], Answer, Answer).
@@ -33,7 +36,8 @@ compute(["/", T | Ts], Acc, Answer) :-
   compute(Ts, Next, Answer).
 
 % Wordy DCG
-
+% DCG describing a simple mathematical word problem
+% phrase --> What is <integer> [<operator> <integer> [...]]?
 parse(E) -->
   `What is`,
   math_expr(E, number),
