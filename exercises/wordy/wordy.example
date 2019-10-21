@@ -14,7 +14,7 @@ wordy(Question, Answer) :-
   !,
   compute(Ts, Answer).
 
-% compute(+InfixOperationQueue, -Answer)
+% compute(+InfixOperationList, -Answer)
 compute([T | Ts], Answer) :- compute(Ts, T, Answer).
 
 compute([], Answer, Answer).
