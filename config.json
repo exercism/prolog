@@ -159,6 +159,13 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": []
+    },
+    {
+      "slug": "kindergarten-garden",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
     }
   ]
 }
