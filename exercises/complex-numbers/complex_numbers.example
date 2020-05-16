@@ -12,3 +12,6 @@ mul((Ra,Ia), (Rb,Ib), (Rr,Ir)) :-
 
 div((Ra,Ia), (Rb,Ib), (Rr,Ir)) :-
   Y is (Rb^2 + Ib^2), Rr is (Ra*Rb + Ia*Ib)/Y, Ir is (Ia*Rb - Ra*Ib)/Y.
+
+exponent((R,I), (Rr,Ir)) :-
+  mul((e**R,0), (cos(I),sin(I)), (Rr,Ir)).

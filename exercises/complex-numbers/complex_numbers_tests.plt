@@ -123,3 +123,20 @@ pending :-
         conjugate((1,1), (X,Y)), X =:= 1, Y =:= -1.
 
 :- end_tests(conjugate).
+
+
+:- begin_tests(exponent).
+
+    test(eulers_identity, condition(pending)) :-
+        exponent((0,pi), (X,Y)), X > -1.001, X < -0.999, Y > -0.001, Y< 0.001.
+
+    test(exponential_of_zero, condition(pending)) :-
+        exponent((0,0), (X,Y)), X > 0.999, X < 1.001, Y > -0.001, Y < 0.001.
+
+    test(exponential_of_purely_real_number, condition(pending)) :-
+        exponent((1,0), (X,Y)), X > e - 0.001, X < e + 0.001, Y > -0.001, Y < 0.001.
+
+    test(exponential_of_number_with_real_and_imaginary_part, condition(pending)) :-
+        exponent((log(2),pi), (X,Y)), X > -2.001, X < -1.999, Y > -0.001, Y < 0.001.
+
+:- end_tests(exponent).

@@ -9,3 +9,5 @@ sub(false).
 
 mul(false).
 div(false).
+
+exponent(false).
