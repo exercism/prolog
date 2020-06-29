@@ -1,7 +1,5 @@
 % Wordy Module -- Built for SWI-PL v8.0.3
 
-:- module(wordy, [wordy/2]).
-
 :- use_module(library(dcg/basics)).
 
 % wordy(+Question, -Answer)

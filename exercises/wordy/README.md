@@ -2,15 +2,7 @@
 
 Parse and evaluate simple math word problems returning the answer as an integer.
 
-## New features introduced to implement
-
-### SWI-PL Modules
-
-In the exercise stub, the module is declared by the `module/2` predicate (`:- module(wordy, [wordy/2]).`).  The first argument is the module name, and the second arugment is a list of the exported predicates from the module.
-
-The module is then imported into the test suite with the `use_module/1` predicate (`:- use_module(wordy).`).
-
-### Errors
+## Errors
 
 Instead of just returning `false`, implement errors which are thrown in the event of the input that the parser should reject.  You can use the `throw/1` and `error/2` predicates to accomplish this.
 

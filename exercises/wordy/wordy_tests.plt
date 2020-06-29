@@ -1,5 +1,3 @@
-:- current_prolog_flag(argv, ArgV), (member('--build', ArgV) -> true; use_module(wordy)).
-
 pending :-
     current_prolog_flag(argv, ['--all'|_]).
 pending :-
