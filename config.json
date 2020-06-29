@@ -159,6 +159,16 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": []
+    },
+    {
+      "slug": "wordy",
+      "uuid": "de3a48e8-6409-4a73-ac0f-66239b1d45c9",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "parsing"
+      ]
     }
   ]
 }
