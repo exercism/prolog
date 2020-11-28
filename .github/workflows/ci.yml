@@ -1,0 +1,22 @@
+name: prolog / main
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use swi-prolog devel-latest
+        uses: logtalk-actions/setup-swi-prolog@bf7d8c39fb30a188646579176d805496421c4ee5
+        with:
+          swi-prolog-branch: devel
+          swi-prolog-version: latest
+
+      - name: Run exercism/prolog ci (runs tests) for all exercises
+        run: bin/build.sh
