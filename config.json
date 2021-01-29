@@ -1,6 +1,12 @@
 {
   "language": "Prolog",
   "active": true,
+  "status": {
+    "concept_exercises": false,
+    "test_runner": false,
+    "representer": false,
+    "analyzer": false
+  },
   "blurb": "Prolog is a general-purpose logic programming language associated with artificial intelligence and computational linguistics.",
   "version": 3,
   "exercises": [
