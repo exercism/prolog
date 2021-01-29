@@ -2,6 +2,7 @@
   "language": "Prolog",
   "active": true,
   "blurb": "Prolog is a general-purpose logic programming language associated with artificial intelligence and computational linguistics.",
+  "version": 3,
   "exercises": [
     {
       "slug": "hello-world",
