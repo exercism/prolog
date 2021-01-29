@@ -93,28 +93,18 @@
       "topics": []
     },
     {
-      "slug": "satellite",
-      "uuid": "27856806-0dee-409f-8047-357de07b914d",
+      "slug": "complex-numbers",
+      "uuid": "3a03d907-73b3-41b8-99ab-583fe98807d7",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-        "binary_trees",
-        "recursion",
-        "tree_traversals"
+        "math"
       ]
     },
     {
-      "slug": "spiral-matrix",
-      "uuid": "77b99980-1922-41b8-8c44-fc964725e9a4",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "nucleotide-count",
-      "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
+      "slug": "grains",
+      "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -129,32 +119,32 @@
       "topics": []
     },
     {
-      "slug": "complex-numbers",
-      "uuid": "3a03d907-73b3-41b8-99ab-583fe98807d7",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
-    },
-    {
-      "slug": "sum-of-multiples",
-      "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
-    },
-    {
       "slug": "leap",
       "uuid": "9b6c4536-8f84-46cd-80cc-e80d77803a7b",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": []
+    },
+    {
+      "slug": "nucleotide-count",
+      "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": []
+    },
+    {
+      "slug": "satellite",
+      "uuid": "27856806-0dee-409f-8047-357de07b914d",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "binary_trees",
+        "recursion",
+        "tree_traversals"
+      ]
     },
     {
       "slug": "space-age",
@@ -165,12 +155,22 @@
       "topics": []
     },
     {
-      "slug": "grains",
-      "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd",
+      "slug": "spiral-matrix",
+      "uuid": "77b99980-1922-41b8-8c44-fc964725e9a4",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": []
+    },
+    {
+      "slug": "sum-of-multiples",
+      "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "math"
+      ]
     },
     {
       "slug": "wordy",
