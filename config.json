@@ -19,6 +19,7 @@
       "slug": "hello-world",
       "name": "Hello World",
       "uuid": "68a85ec5-acdd-4f4f-9b9e-a5e39f1f7ac0",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -26,6 +27,7 @@
       "slug": "queen-attack",
       "name": "Queen Attack",
       "uuid": "e4e1ed2c-d93c-4e8f-a395-53ce6d7135f1",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -33,6 +35,7 @@
       "slug": "triangle",
       "name": "Triangle",
       "uuid": "a3c467cd-b2f2-43a8-9a81-d60490645c59",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -40,6 +43,7 @@
       "slug": "isogram",
       "name": "Isogram",
       "uuid": "10ed3b8e-d093-41e2-9f2a-4e5fc3172e71",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -47,6 +51,7 @@
       "slug": "binary",
       "name": "Binary",
       "uuid": "ee8e835f-1cbf-4ff4-a8f2-c641bc4045cc",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": [
         "math"
@@ -56,6 +61,7 @@
       "slug": "rna-transcription",
       "name": "Rna Transcription",
       "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -63,6 +69,7 @@
       "slug": "anagram",
       "name": "Anagram",
       "uuid": "3e059acb-37dc-44ed-bd06-91c5e1fdd8ba",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -70,6 +77,7 @@
       "slug": "pascals-triangle",
       "name": "Pascals Triangle",
       "uuid": "b7022a0f-9fda-4144-ae1e-11615bac0f56",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": [
         "math"
@@ -79,6 +87,7 @@
       "slug": "dominoes",
       "name": "Dominoes",
       "uuid": "0dd8e1c8-d94e-4977-b9c8-ad5b0ff33f98",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -86,6 +95,7 @@
       "slug": "complex-numbers",
       "name": "Complex Numbers",
       "uuid": "3a03d907-73b3-41b8-99ab-583fe98807d7",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": [
         "math"
@@ -95,6 +105,7 @@
       "slug": "grains",
       "name": "Grains",
       "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -102,6 +113,7 @@
       "slug": "hamming",
       "name": "Hamming",
       "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -109,6 +121,7 @@
       "slug": "leap",
       "name": "Leap",
       "uuid": "9b6c4536-8f84-46cd-80cc-e80d77803a7b",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -116,6 +129,7 @@
       "slug": "nucleotide-count",
       "name": "Nucleotide Count",
       "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -123,6 +137,7 @@
       "slug": "satellite",
       "name": "Satellite",
       "uuid": "27856806-0dee-409f-8047-357de07b914d",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": [
         "binary_trees",
@@ -134,6 +149,7 @@
       "slug": "space-age",
       "name": "Space Age",
       "uuid": "2b72a411-b07f-4e89-bfdf-2ed3fce256fe",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -141,6 +157,7 @@
       "slug": "spiral-matrix",
       "name": "Spiral Matrix",
       "uuid": "77b99980-1922-41b8-8c44-fc964725e9a4",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": []
     },
@@ -148,6 +165,7 @@
       "slug": "sum-of-multiples",
       "name": "Sum Of Multiples",
       "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": [
         "math"
@@ -157,6 +175,7 @@
       "slug": "wordy",
       "name": "Wordy",
       "uuid": "de3a48e8-6409-4a73-ac0f-66239b1d45c9",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": [
         "parsing"
