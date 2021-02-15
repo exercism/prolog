@@ -1,4 +1,4 @@
-## Running Tests
+# Running Tests
 
 SWI Prolog can either be run interactively or by executing it directly at the
 command line.

@@ -1,3 +1,5 @@
+# Instructions append
+
 Try using Prolog DCGs. **But watch out for left recursion!**
 
 For extra bonus points:
