@@ -1,6 +1,12 @@
 {
   "blurb": "Implement complex numbers.",
-  "authors": [],
+  "authors": [
+    "Average-user"
+  ],
+  "contributors": [
+    "mbramson",
+    "neenjaw"
+  ],
   "files": {
     "solution": [],
     "test": [],

@@ -1,6 +1,16 @@
 {
   "blurb": "The classical introductory exercise. Just say \"Hello, World!\"",
-  "authors": [],
+  "authors": [
+    "parkerl"
+  ],
+  "contributors": [
+    "Average-user",
+    "heneryville",
+    "jackhughesweb",
+    "jesperp",
+    "kytrinyx",
+    "neenjaw"
+  ],
   "files": {
     "solution": [],
     "test": [],
