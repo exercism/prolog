@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "nucleotide-count.pl"
+      "nucleotide_count.pl"
     ],
     "test": [
-      "nucleotide-count_tests.plt"
+      "nucleotide_count_tests.plt"
     ],
     "example": [
-      ".meta/nucleotide-count.example"
+      ".meta/nucleotide_count.example"
     ]
   },
   "source": "The Calculating DNA Nucleotides_problem at Rosalind",

@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "complex-numbers.pl"
+      "complex_numbers.pl"
     ],
     "test": [
-      "complex-numbers_tests.plt"
+      "complex_numbers_tests.plt"
     ],
     "example": [
-      ".meta/complex-numbers.example"
+      ".meta/complex_numbers.example"
     ]
   },
   "source": "Wikipedia",

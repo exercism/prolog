@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "space-age.pl"
+      "space_age.pl"
     ],
     "test": [
-      "space-age_tests.plt"
+      "space_age_tests.plt"
     ],
     "example": [
-      ".meta/space-age.example"
+      ".meta/space_age.example"
     ]
   },
   "source": "Partially inspired by Chapter 1 in Chris Pine's online Learn to Program tutorial.",

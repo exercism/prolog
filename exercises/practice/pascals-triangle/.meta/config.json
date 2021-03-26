@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "pascals-triangle.pl"
+      "pascals_triangle.pl"
     ],
     "test": [
-      "pascals-triangle_tests.plt"
+      "pascals_triangle_tests.plt"
     ],
     "example": [
-      ".meta/pascals-triangle.example"
+      ".meta/pascals_triangle.example"
     ]
   },
   "source": "Pascal's Triangle at Wolfram Math World",

@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "rna-transcription.pl"
+      "rna_transcription.pl"
     ],
     "test": [
-      "rna-transcription_tests.plt"
+      "rna_transcription_tests.plt"
     ],
     "example": [
-      ".meta/rna-transcription.example"
+      ".meta/rna_transcription.example"
     ]
   },
   "source": "Hyperphysics",

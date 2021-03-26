@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "sum-of-multiples.pl"
+      "sum_of_multiples.pl"
     ],
     "test": [
-      "sum-of-multiples_tests.plt"
+      "sum_of_multiples_tests.plt"
     ],
     "example": [
-      ".meta/sum-of-multiples.example"
+      ".meta/sum_of_multiples.example"
     ]
   },
   "source": "A variation on Problem 1 at Project Euler",

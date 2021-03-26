@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "queen-attack.pl"
+      "queen_attack.pl"
     ],
     "test": [
-      "queen-attack_tests.plt"
+      "queen_attack_tests.plt"
     ],
     "example": [
-      ".meta/queen-attack.example"
+      ".meta/queen_attack.example"
     ]
   },
   "source": "J Dalbey's Programming Practice problems",
