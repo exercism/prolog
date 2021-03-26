@@ -2,9 +2,15 @@
   "blurb": "Given a DNA strand, return its RNA Complement Transcription.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "rna-transcription.pl"
+    ],
+    "test": [
+      "rna-transcription_tests.plt"
+    ],
+    "example": [
+      ".meta/rna-transcription.example"
+    ]
   },
   "source": "Hyperphysics",
   "source_url": "http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html"
