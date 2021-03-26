@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "hello-world.pl"
+      "hello_world.pl"
     ],
     "test": [
-      "hello-world_tests.plt"
+      "hello_world_tests.plt"
     ],
     "example": [
-      ".meta/hello-world.example"
+      ".meta/hello_world.example"
     ]
   },
   "source": "This is an exercise to introduce users to using Exercism",

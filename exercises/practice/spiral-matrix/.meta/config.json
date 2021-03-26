@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "spiral-matrix.pl"
+      "spiral_matrix.pl"
     ],
     "test": [
-      "spiral-matrix_tests.plt"
+      "spiral_matrix_tests.plt"
     ],
     "example": [
-      ".meta/spiral-matrix.example"
+      ".meta/spiral_matrix.example"
     ]
   },
   "source": "Reddit r/dailyprogrammer challenge #320 [Easy] Spiral Ascension.",
