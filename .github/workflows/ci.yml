@@ -17,7 +17,7 @@ jobs:
         prolog-version: [latest]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
 
       - name: Use swi-prolog ${{ matrix.prolog-branch }}-${{ matrix.prolog-version }}
         uses: logtalk-actions/setup-swi-prolog@bf7d8c39fb30a188646579176d805496421c4ee5
