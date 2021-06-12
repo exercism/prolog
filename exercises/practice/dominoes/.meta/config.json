@@ -1,6 +1,9 @@
 {
   "blurb": "Make a chain of dominoes.",
   "authors": [],
+  "contributors": [
+    "neenjaw"
+  ],
   "files": {
     "solution": [
       "dominoes.pl"

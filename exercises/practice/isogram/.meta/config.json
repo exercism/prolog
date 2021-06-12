@@ -1,6 +1,10 @@
 {
   "blurb": "Determine if a word or phrase is an isogram.",
-  "authors": [],
+  "authors": [
+    "Average-user"
+  ],
+  "contributors": [
+  ],
   "files": {
     "solution": [
       "isogram.pl"

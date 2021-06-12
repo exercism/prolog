@@ -1,6 +1,11 @@
 {
   "blurb": "Implement complex numbers.",
-  "authors": [],
+  "authors": [
+    "Average-user"
+  ],
+  "contributors": [
+    "mbramson",
+  ],
   "files": {
     "solution": [
       "complex_numbers.pl"

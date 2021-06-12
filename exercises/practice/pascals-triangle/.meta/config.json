@@ -1,6 +1,10 @@
 {
   "blurb": "Compute Pascal's triangle up to a given number of rows.",
-  "authors": [],
+  "authors": [
+    "Average-user"
+  ],
+  "contributors": [
+  ],
   "files": {
     "solution": [
       "pascals_triangle.pl"
