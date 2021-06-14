@@ -255,5 +255,19 @@
       "icon": "TODO"
     }
   ],
-  "tags": []
+  "tags": [
+    "paradigm/declarative",
+    "paradigm/logic",
+    "typing/dynamic",
+    "execution_mode/interpreted",
+    "platform/windows",
+    "platform/mac",
+    "platform/linux",
+    "platform/android",
+    "runtime/language_specific",
+    "runtime/wasmtime",
+    "used_for/artificial_intelligence",
+    "used_for/backends",
+    "used_for/cross_platform_development"
+  ]
 }
