@@ -226,7 +226,7 @@
   "key_features": [
     {
       "title": "Compatible",
-      "content": "SWI-Prolog offers a comprehensive set of built-in predicates, covers Part 1 of the Prolog ISO standard, the Edinburgh Prolog standard and Quintus and SICStus Prolog.",
+      "content": "SWI-Prolog offers a comprehensive set of built-in predicates, covering many established standards.",
       "icon": "TODO"
     },
     {
@@ -236,22 +236,22 @@
     },
     {
       "title": "Declarative",
-      "content": "Prolog focuses on what should be computed, rather than how it is implemented, by expressing what holds try about solutions.",
+      "content": "Prolog focuses on what holds true about solutions, rather than how it is implemented.",
       "icon": "TODO"
     },
     {
       "title": "Logical",
-      "content": "Prolog is based on the rules of logic. Programs consist of sets of Horn Clauses, execution being a form of logical resolution.",
+      "content": "Prolog is based on the rules of logic, with execution being a form of logical resolution.",
       "icon": "TODO"
     },
     {
       "title": "Homoiconic",
-      "content": "Prolog programs are also valid prolog terms, allowing for programs to interact with other prolog programs and create additional clauses.",
+      "content": "Prolog programs are also valid prolog terms, programs can interact with other prolog programs.",
       "icon": "TODO"
     },
     {
       "title": "Portable",
-      "content": "Implementations exist for almost all Unix/Linux, Windows, MacOS platforms with additional targets to WebAssembly (WASM) on all major cpu architectures.",
+      "content": "Implementations exist for Unix/Linux, Windows, MacOS platforms with targets to WebAssembly (WASM).",
       "icon": "TODO"
     }
   ],
