@@ -227,32 +227,32 @@
     {
       "title": "Compatible",
       "content": "SWI-Prolog offers a comprehensive set of built-in predicates, covering many established standards.",
-      "icon": "TODO"
+      "icon": "interop"
     },
     {
       "title": "Simplicity",
       "content": "A single language element, called a clause, is the basis of all prolog relations and programs.",
-      "icon": "TODO"
+      "icon": "small"
     },
     {
       "title": "Declarative",
       "content": "Prolog focuses on what holds true about solutions, rather than how it is implemented.",
-      "icon": "TODO"
+      "icon": "multi-paradigm"
     },
     {
       "title": "Logical",
       "content": "Prolog is based on the rules of logic, with execution being a form of logical resolution.",
-      "icon": "TODO"
+      "icon": "scientific"
     },
     {
       "title": "Homoiconic",
       "content": "Prolog programs are also valid prolog terms, programs can interact with other prolog programs.",
-      "icon": "TODO"
+      "icon": "homoiconic"
     },
     {
       "title": "Portable",
       "content": "Implementations exist for Unix/Linux, Windows, MacOS platforms with targets to WebAssembly (WASM).",
-      "icon": "TODO"
+      "icon": "portable"
     }
   ],
   "tags": [
