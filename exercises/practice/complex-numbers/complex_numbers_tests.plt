@@ -111,7 +111,7 @@ pending :-
 :- end_tests(absolute_value).
 
 
-:- begin_tests(conjugate).
+:- begin_tests(conjugate_value).
 
     test(conjugate_a_purely_real_number, condition(pending)) :-
         conjugate((5,0), (X,Y)), X =:= 5, Y =:= 0.
@@ -122,4 +122,4 @@ pending :-
     test(conjugate_a_number_with_real_and_imaginary_part, condition(pending)) :-
         conjugate((1,1), (X,Y)), X =:= 1, Y =:= -1.
 
-:- end_tests(conjugate).
+:- end_tests(conjugate_value).
