@@ -16,7 +16,7 @@ pending :-
 :- begin_tests(hello_world).
 
     test(hello_world, condition(true)) :-
-        hello_world('Hello World!').
+        hello_world('Hello, World!').
 
     % Once the first test passes, un-skip the following test by
     % changing `pending` in `condition(pending)` to `true`.
