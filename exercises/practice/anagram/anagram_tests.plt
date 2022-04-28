@@ -1,3 +1,5 @@
+:- encoding(utf8).
+
 pending :-
     current_prolog_flag(argv, ['--all'|_]).
 pending :-
