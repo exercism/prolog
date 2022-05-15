@@ -34,7 +34,8 @@ pending :-
     test(first_and_last_sides_equal, condition(pending)) :-
         triangle(4, 3, 4, "isosceles").
 
-    test(equilateral_triangles_are_also_isosceles, condition(pending)) :-
+    test(equilateral_triangles_not_isosceles_for_this_exercise, 
+            [fail, condition(pending)]) :-
         triangle(4, 4, 4, "isosceles").
 
     test(no_sides_are_equal, [fail, condition(pending)]) :-
