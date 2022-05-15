@@ -10,7 +10,7 @@
 %
 % The create/1 predicate succeeds if the DimTuple contains valid chessboard 
 % dimensions, e.g. (8,8).
-create((DimX, DimY))) :-
+create((DimX, DimY)) :-
 	fail.
 
 %! attack(+FromTuple, +ToTuple)
