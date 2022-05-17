@@ -6,6 +6,16 @@
 % Replace the goal below with
 % your implementation.
 
-create(false).
+%! create(+DimTuple)
+%
+% The create/1 predicate succeeds if the DimTuple contains valid chessboard 
+% dimensions, e.g. (8,8).
+create((DimX, DimY)) :-
+	fail.
 
-attack(false).
+%! attack(+FromTuple, +ToTuple)
+%
+% The attack/2 predicate succeeds if a queen positioned on ToTuple is 
+% vulnerable to an attack by another queen positioned on FromTuple.
+attack((FromX, FromY), (ToX, ToY)):-
+	fail.
