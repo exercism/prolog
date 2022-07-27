@@ -9,7 +9,7 @@
 %! create(+DimTuple)
 %
 % The create/1 predicate succeeds if the DimTuple contains valid chessboard 
-% dimensions, e.g. (8,8).
+% dimensions, e.g. (0,0) or (2,4).
 create((DimX, DimY)) :-
 	fail.
 
