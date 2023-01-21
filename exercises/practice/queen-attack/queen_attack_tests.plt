@@ -48,15 +48,15 @@ pending :-
       attack((4,5), (2,5)).
 
     test(attack_first_diagonal, condition(pending)) :-
-      attack((2,2), (0,4)).
+      attack((2,3), (0,5)).
 
     test(attack_second_diagonal, condition(pending)) :-
-      attack((2,2), (3,1)).
+      attack((2,3), (3,2)).
 
     test(attack_third_diagonal, condition(pending)) :-
-      attack((2,2), (1,1)).
+      attack((2,3), (1,2)).
 
     test(attack_fourth_diagonal, condition(pending)) :-
-      attack((2,2), (5,5)).
+      attack((2,3), (5,6)).
 
 :- end_tests(attack_tests).
