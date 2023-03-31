@@ -1,4 +1,4 @@
-## Installation
+# Installation
 
 **Mac Users**: Install using homebrew with `brew install swi-prolog`. Alternatively, download the source for your machine from the [SWI Prolog Website](http://www.swi-prolog.org/download/devel) .
 

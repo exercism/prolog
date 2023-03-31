@@ -1,0 +1,32 @@
+{
+  "docs": [
+    {
+      "uuid": "7d39efc2-394c-4aa0-a499-7a8120774687",
+      "slug": "installation",
+      "path": "docs/INSTALLATION.md",
+      "title": "Installing Prolog locally",
+      "blurb": "Learn how to install Prolog locally to solve Exercism's exercises on your own machine"
+    },
+    {
+      "uuid": "9b231b50-246d-4973-9133-a59b6a0a719f",
+      "slug": "learning",
+      "path": "docs/LEARNING.md",
+      "title": "How to learn Prolog",
+      "blurb": "An overview of how to get started from scratch with Prolog"
+    },
+    {
+      "uuid": "86c56ce6-c098-4091-af20-022ae027e7c3",
+      "slug": "tests",
+      "path": "docs/TESTS.md",
+      "title": "Testing on the Prolog track",
+      "blurb": "Learn how to test your Prolog exercises on Exercism"
+    },
+    {
+      "uuid": "1b298c3f-a9c3-4524-886b-ace7d2b623e0",
+      "slug": "resources",
+      "path": "docs/RESOURCES.md",
+      "title": "Useful Prolog resources",
+      "blurb": "A collection of useful resources to help you master Prolog"
+    }
+  ]
+}
