@@ -3,12 +3,12 @@ plant('G', grass) :- !.
 plant('R', radishes) :- !.
 plant('V', violets) :- !.
 
-garden(Children, Garden, Child, [Plant1, Plant2, Plant3, Plant4]) :-
-  sort(Children, Cdehilnr),
+garden(Garden, Child, [Plant1, Plant2, Plant3, Plant4]) :-
+  Children = [alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry],
   split_string(Garden, "\n", "", [Line1, Line2]),
   string_chars(Line1, Row1),
   string_chars(Line2, Row2),
-  nth0(Index, Cdehilnr, Child),
+  nth0(Index, Children, Child),
   First is 2*Index,
   succ(First, Second),
   nth0(First, Row1, P1),

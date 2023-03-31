@@ -4,76 +4,78 @@ pending :-
   write('\nA TEST IS PENDING!\n'),
   fail.
 
-:- begin_tests(kindergarten_garden).
+:- begin_tests(partial_garden).
 
-  test(test_alices_garden, condition(true)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "RC\nGG", alice, [radishes, clover, grass, grass]).
+  test(garden_with_single_student, condition(true)) :-
+    garden("RC\nGG", alice, Plants),
+    Plants == [radishes, clover, grass, grass].
 
-  test(test_different_garden_for_alice, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VC\nRC", alice, [violets, clover, radishes, clover]).
+  test(different_garden_with_single_student, condition(pending)) :-
+    garden("VC\nRC", alice, Plants),
+    Plants == [violets, clover, radishes, clover].
 
-  test(test_bobs_garden, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VVCG\nVVRC", bob, [clover, grass, radishes, clover]).
+  test(garden_with_two_students, condition(pending)) :-
+    garden("VVCG\nVVRC", bob, Plants),
+    Plants == [clover, grass, radishes, clover].
 
-  test(test_bob_and_charlies_gardens, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VVCCGG\nVVCCGG", bob, [clover, clover, clover, clover]),
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VVCCGG\nVVCCGG", charlie, [grass, grass, grass, grass]).
+  test(multiple_students_for_the_same_garden_with_three_students, condition(pending)) :-
+    garden("VVCCGG\nVVCCGG", bob, Plants),
+    Plants == [clover, clover, clover, clover].
 
-  test(test_alice, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", alice, [violets, radishes, violets, radishes]).
+  test(third_student_garden, condition(pending)) :-
+    garden("VVCCGG\nVVCCGG", charlie, Plants),
+    Plants == [grass, grass, grass, grass].
 
-  test(test_bob, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", bob, [clover, grass, clover, clover]).
+:- end_tests(partial_garden).
 
-  test(test_charlie, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", charlie, [violets, violets, clover, grass]).
+:- begin_tests(full_garden).
 
-  test(test_david, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", david, [radishes, violets, clover, radishes]).
+  test(for_alice_first_student_garden, condition(true)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", alice, Plants),
+    Plants == [violets, radishes, violets, radishes].
 
-  test(test_eve, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", eve, [clover, grass, radishes, grass]).
+  test(for_bob_second_student_garden, condition(pending)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", bob, Plants),
+    Plants == [clover, grass, clover, clover].
+  
+  test(for_charlie, condition(pending)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", charlie, Plants),
+    Plants == [violets, violets, clover, grass].
+  
+  test(for_david, condition(pending)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", david, Plants),
+    Plants == [radishes, violets, clover, radishes].
 
-  test(test_fred, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", fred, [grass, clover, violets, clover]).
+  test(for_eve, condition(pending)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", eve, Plants),
+    Plants == [clover, grass, radishes, grass].
 
-  test(test_ginny, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", ginny, [clover, grass, grass, clover]).
+  test(for_fred, condition(pending)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", fred, Plants),
+    Plants == [grass, clover, violets, clover].
 
-  test(test_harriet, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", harriet, [violets, radishes, radishes, violets]).
+  test(for_ginny, condition(pending)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", ginny, Plants),
+    Plants == [clover, grass, grass, clover].
 
-  test(test_ileana, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", ileana, [grass, clover, violets, clover]).
+  test(for_harriet, condition(pending)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", harriet, Plants),
+    Plants == [violets, radishes, radishes, violets].
 
-  test(test_joseph, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", joseph, [violets, clover, violets, grass]).
+  test(for_ileana, condition(pending)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", ileana, Plants),
+    Plants == [grass, clover, violets, clover].
 
-  test(test_kincaid, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", kincaid, [grass, clover, clover, grass]).
+  test(for_joseph, condition(pending)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", joseph, Plants),
+    Plants == [violets, clover, violets, grass].
 
-  test(test_larry, condition(pending)) :-
-    garden([alice, bob, charlie, david, eve, fred, ginny, harriet, ileana, joseph, kincaid, larry], "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", larry, [grass, violets, clover, violets]).
+  test(for_kincaid_second_to_last_student_garden, condition(pending)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", kincaid, Plants),
+    Plants == [grass, clover, clover, grass].
 
-  test(test_patricia, condition(pending)) :-
-    garden([samantha, patricia, xander, roger], "VCRRGVRG\nRVGCCGCV", patricia, [violets, clover, radishes, violets]).
+  test(for_larry_last_student_garden, condition(pending)) :-
+    garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", larry, Plants),
+    Plants == [grass, violets, clover, violets].
 
-  test(test_roger, condition(pending)) :-
-    garden([samantha, patricia, xander, roger], "VCRRGVRG\nRVGCCGCV", roger, [radishes, radishes, grass, clover]).
-
-  test(test_samantha, condition(pending)) :-
-    garden([samantha, patricia, xander, roger], "VCRRGVRG\nRVGCCGCV", samantha, [grass, violets, clover, grass]).
-
-  test(test_xander, condition(pending)) :-
-    garden([samantha, patricia, xander, roger], "VCRRGVRG\nRVGCCGCV", xander, [radishes, grass, clover, violets]).
-
-  test(test_two_gardens_different_students, condition(pending)) :-
-    Diagram = "VCRRGVRG\nRVGCCGCV",
-    Garden1 = [alice, bob, charlie, dan],
-    Garden2 = [bob, charlie, dan, erin],
-    garden(Garden1, Diagram, bob, [radishes, radishes, grass, clover]),
-    garden(Garden2, Diagram, bob, [violets, clover, radishes, violets]),
-    garden(Garden1, Diagram, charlie, [grass, violets, clover, grass]),
-    garden(Garden2, Diagram, charlie, [radishes, radishes, grass, clover]).
-
-:- end_tests(kindergarten_garden).
+:- end_tests(full_garden).
