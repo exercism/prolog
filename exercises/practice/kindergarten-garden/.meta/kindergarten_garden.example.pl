@@ -18,4 +18,5 @@ garden(Children, Garden, Child, [Plant1, Plant2, Plant3, Plant4]) :-
   plant(P1, Plant1),
   plant(P2, Plant2),
   plant(P3, Plant3),
-  plant(P4, Plant4).
+  plant(P4, Plant4),
+  !.
