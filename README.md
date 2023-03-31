@@ -1,5 +1,6 @@
 # Exercism Prolog Track
-![build status](https://travis-ci.org/exercism/prolog.svg?branch=master)
+![Configlet Status](https://github.com/exercism/prolog/workflows/configlet/badge.svg)
+![Exercise Test Status](https://github.com/exercism/prolog/workflows/prolog%20%2F%20main/badge.svg)
 
 Exercism Exercises in Prolog
 
@@ -39,7 +40,7 @@ READMEs are constructed using shared metadata, which lives in the [exercism/x-co
 
 - Each problem should have a test suite, an example solution, and a template
 file for the real implementation. The example solution should have the
-`.example` file extension.
+`.example.pl` file extension.
 
 - Each test file should have code like the following at the top of the file.
   This allows the tests to be run on CI and configures tests to be skipped with
