@@ -219,6 +219,14 @@
         "topics": [
           "parsing"
         ]
+      },
+      {
+        "slug": "collatz-conjecture",
+        "name": "Collatz Conjecture",
+        "uuid": "e6cebdbb-5b5c-4d87-a3f0-b8ec6d2438bf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1        
       }
     ]
   },
