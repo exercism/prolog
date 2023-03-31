@@ -1,1 +1,1 @@
-anagram(Word, Options, Matching).
+anagram(Word, Candidates, Anagrams).
