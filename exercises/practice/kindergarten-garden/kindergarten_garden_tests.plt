@@ -30,7 +30,7 @@ pending :-
 
 :- begin_tests(full_garden).
 
-  test(for_alice_first_student_garden, condition(true)) :-
+  test(for_alice_first_student_garden, condition(pending)) :-
     garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV", alice, Plants),
     Plants == [violets, radishes, violets, radishes].
 
