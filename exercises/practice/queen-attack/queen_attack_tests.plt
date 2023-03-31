@@ -1,12 +1,3 @@
-% Please visit https://exercism.org/docs/tracks/prolog/installation
-% for instructions on setting up prolog.
-% Visit https://exercism.org/docs/tracks/prolog/tests
-% for help running the tests for prolog exercises.
-
-% The goal below allows tests to be skipped
-% unless the "--all" flag is passed at
-% the command line.
-
 pending :-
     current_prolog_flag(argv, ['--all'|_]).
 pending :-
