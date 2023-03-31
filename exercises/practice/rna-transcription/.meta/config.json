@@ -13,7 +13,7 @@
       "rna_transcription_tests.plt"
     ],
     "example": [
-      ".meta/rna_transcription.example"
+      ".meta/rna_transcription.example.pl"
     ]
   },
   "blurb": "Given a DNA strand, return its RNA Complement Transcription.",

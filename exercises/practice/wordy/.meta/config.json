@@ -10,7 +10,7 @@
       "wordy_tests.plt"
     ],
     "example": [
-      ".meta/wordy.example"
+      ".meta/wordy.example.pl"
     ]
   },
   "blurb": "Parse and evaluate simple math word problems returning the answer as an integer.",

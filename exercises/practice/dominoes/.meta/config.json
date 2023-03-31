@@ -11,7 +11,7 @@
       "dominoes_tests.plt"
     ],
     "example": [
-      ".meta/dominoes.example"
+      ".meta/dominoes.example.pl"
     ]
   },
   "blurb": "Make a chain of dominoes."

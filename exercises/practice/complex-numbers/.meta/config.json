@@ -13,7 +13,7 @@
       "complex_numbers_tests.plt"
     ],
     "example": [
-      ".meta/complex_numbers.example"
+      ".meta/complex_numbers.example.pl"
     ]
   },
   "blurb": "Implement complex numbers.",

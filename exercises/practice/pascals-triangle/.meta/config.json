@@ -10,7 +10,7 @@
       "pascals_triangle_tests.plt"
     ],
     "example": [
-      ".meta/pascals_triangle.example"
+      ".meta/pascals_triangle.example.pl"
     ]
   },
   "blurb": "Compute Pascal's triangle up to a given number of rows.",

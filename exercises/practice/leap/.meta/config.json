@@ -13,7 +13,7 @@
       "leap_tests.plt"
     ],
     "example": [
-      ".meta/leap.example"
+      ".meta/leap.example.pl"
     ]
   },
   "blurb": "Given a year, report if it is a leap year.",

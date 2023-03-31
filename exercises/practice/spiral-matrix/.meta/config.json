@@ -11,7 +11,7 @@
       "spiral_matrix_tests.plt"
     ],
     "example": [
-      ".meta/spiral_matrix.example"
+      ".meta/spiral_matrix.example.pl"
     ]
   },
   "blurb": "Given the size, return a square matrix of numbers in spiral order.",

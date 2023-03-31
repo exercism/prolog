@@ -17,7 +17,7 @@
       "hello_world_tests.plt"
     ],
     "example": [
-      ".meta/hello_world.example"
+      ".meta/hello_world.example.pl"
     ]
   },
   "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",
