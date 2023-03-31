@@ -1,5 +1,7 @@
 {
-  "authors": [],
+  "authors": [
+    "n8chz"
+  ],
   "files": {
     "solution": [
       "kindergarten_garden.pl"
