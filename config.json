@@ -221,12 +221,20 @@
         ]
       },
       {
+        "slug": "zebra-puzzle",
+        "name": "Zebra Puzzle",
+        "uuid": "7b7a02a8-8a52-496d-8d04-60558545d4f7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1        
+      },
+      {
         "slug": "collatz-conjecture",
         "name": "Collatz Conjecture",
         "uuid": "e6cebdbb-5b5c-4d87-a3f0-b8ec6d2438bf",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1        
+        "difficulty": 1
       }
     ]
   },
