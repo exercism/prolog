@@ -1,1 +1,1 @@
-garden(Children, Garden, Child, Plants).
+garden(Garden, Child, Plants).
