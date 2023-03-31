@@ -8,19 +8,23 @@ pending :-
 
     test(rna_complement_of_cytosine_is_guanine, condition(true)) :-
         rna_transcription("C", Result),
-            Result == "G".
+        Result == "G".
 
     test(rna_complement_of_guanine_is_cytosine, condition(pending)) :-
-        rna_transcription("G", "C").
+        rna_transcription("G", Result),
+        Result == "C".
 
     test(rna_complement_of_thymine_is_adenine, condition(pending)) :-
-        rna_transcription("T", "A").
+        rna_transcription("T", Result),
+        Result == "A".
 
     test(rna_complement_of_adenine_is_uracil, condition(pending)) :-
-        rna_transcription("A", "U").
+        rna_transcription("A", Result),
+        Result == "U".
 
     test(rna_complement, condition(pending)) :-
-        rna_transcription("ACGTGGTCTTAA", "UGCACCAGAAUU").
+        rna_transcription("ACGTGGTCTTAA", Result),
+        Result == "UGCACCAGAAUU".
 
     test(dna_correctly_handles_invalid_input, [fail, condition(pending)]) :-
         rna_transcription("U", _).
