@@ -8,7 +8,7 @@ The following command can be used to run the tests from the command line:
 swipl -f <exercise>.pl -s <exercise>_tests.plt -g run_tests,halt -t 'halt(1)'
 ```
 
-In both cases, replace `<exercise>` with the name of the exercise you are implementing.
+Replace `<exercise>` with the name of the exercise you are implementing.
 
 ## Interactive
 
@@ -27,7 +27,16 @@ with:
 ?- run_tests.
 ```
 
-In both cases, replace `<exercise>` with the name of the exercise you are implementing.
+Replace `<exercise>` with the name of the exercise you are implementing.
+
+### Reloading changes
+
+Once the above files are loaded, you can apply any changes you've made
+by running:
+
+```
+?- make.
+```
 
 ## Skipped tests
 
