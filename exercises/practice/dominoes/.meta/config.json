@@ -1,0 +1,18 @@
+{
+  "authors": [],
+  "contributors": [
+    "neenjaw"
+  ],
+  "files": {
+    "solution": [
+      "dominoes.pl"
+    ],
+    "test": [
+      "dominoes_tests.plt"
+    ],
+    "example": [
+      ".meta/dominoes.example.pl"
+    ]
+  },
+  "blurb": "Make a chain of dominoes."
+}

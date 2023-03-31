@@ -1,3 +1,5 @@
+# About
+
 Prolog (short for "Programming Logic") is a [declarative](https://en.wikipedia.org/wiki/Declarative_programming) and logic
 based programming language developed in 1972 by Alain Colmerauer and Philippe Roussel. 
 It has many applications, most notably in Artificial Intelligence for its pattern matching abilities over natural language parse trees.

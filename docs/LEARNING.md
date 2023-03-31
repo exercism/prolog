@@ -1,4 +1,4 @@
-## References
+# References
 * [SWI-Prolog Getting Started](http://www.swi-prolog.org/pldoc/man?section=quickstart)
 * [SWISH - An online Prolog REPL](http://swish.swi-prolog.org/)
 * [Tutorials and Resources](http://www.swi-prolog.org/Links.html)
