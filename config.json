@@ -19,18 +19,10 @@
     "average_run_time": 1.0
   },
   "files": {
-    "solution": [
-      "%{snake_slug}.pl"
-    ],
-    "test": [
-      "%{snake_slug}_tests.plt"
-    ],
-    "example": [
-      ".meta/%{snake_slug}.example.pl"
-    ],
-    "exemplar": [
-      ".meta/%{snake_slug}.exemplar.pl"
-    ]
+    "solution": ["%{snake_slug}.pl"],
+    "test": ["%{snake_slug}_tests.plt"],
+    "example": [".meta/%{snake_slug}.example.pl"],
+    "exemplar": [".meta/%{snake_slug}.exemplar.pl"]
   },
   "exercises": {
     "concept": [],
@@ -78,9 +70,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "rna-transcription",
@@ -107,9 +97,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "dominoes",
@@ -127,9 +115,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "grains",
@@ -174,11 +160,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "binary_trees",
-          "recursion",
-          "tree_traversals"
-        ]
+        "topics": ["binary_trees", "recursion", "tree_traversals"]
       },
       {
         "slug": "space-age",
@@ -205,9 +187,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "wordy",
@@ -216,9 +196,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "parsing"
-        ]
+        "topics": ["parsing"]
       },
       {
         "slug": "zebra-puzzle",
@@ -226,7 +204,7 @@
         "uuid": "7b7a02a8-8a52-496d-8d04-60558545d4f7",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1        
+        "difficulty": 1
       },
       {
         "slug": "collatz-conjecture",
@@ -238,6 +216,7 @@
       },
       {
         "slug": "kindergarten-garden",
+        "name": "Kindergarten Garden",
         "uuid": "85f458af-f82f-4df0-8186-1357903383a5",
         "practices": [],
         "prerequisites": [],
