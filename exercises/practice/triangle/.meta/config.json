@@ -13,7 +13,7 @@
       "triangle_tests.plt"
     ],
     "example": [
-      ".meta/triangle.example"
+      ".meta/triangle.example.pl"
     ]
   },
   "blurb": "Determine if a triangle is equilateral, isosceles, or scalene.",

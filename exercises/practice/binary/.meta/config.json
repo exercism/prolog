@@ -13,7 +13,7 @@
       "binary_tests.plt"
     ],
     "example": [
-      ".meta/binary.example"
+      ".meta/binary.example.pl"
     ]
   },
   "blurb": "Convert a binary number, represented as a string (e.g. '101010'), to its decimal equivalent using first principles.",

@@ -13,7 +13,7 @@
       "hamming_tests.plt"
     ],
     "example": [
-      ".meta/hamming.example"
+      ".meta/hamming.example.pl"
     ]
   },
   "blurb": "Calculate the Hamming difference between two DNA strands.",

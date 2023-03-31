@@ -13,7 +13,7 @@
       "satellite_tests.plt"
     ],
     "example": [
-      ".meta/satellite.example"
+      ".meta/satellite.example.pl"
     ]
   },
   "blurb": "Rebuild binary trees from pre-order and in-order traversals."

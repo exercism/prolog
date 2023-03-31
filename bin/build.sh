@@ -5,15 +5,15 @@ set -euo pipefail
 declare -i TEST_RESULT=0
 FAILED_EXERCISES=''
 
-for example_file in $(find exercises/practice -type f -name '*.example')
+for example_file in $(find exercises/practice -type f -name '*.example.pl')
 do
     echo "${example_file}"
     example_dir=$(dirname "${example_file}")
     exercise_dir=$(dirname "${example_dir}")
-    exercise=$(basename "${example_file}" .example)
+    exercise=$(basename "${example_file}" .example.pl)
     echo '-------------------------------------------------------'
     echo "Testing ${exercise}"
-    swipl -f  "${example_dir}/${exercise}.example" -s "${exercise_dir}/${exercise}_tests.plt" -g run_tests,halt -t 'halt(1)' -- --all
+    swipl -f  "${example_dir}/${exercise}.example.pl" -s "${exercise_dir}/${exercise}_tests.plt" -g run_tests,halt -t 'halt(1)' -- --all
     if [ $? -ne 0 ]; then
         TEST_RESULT=1
         FAILED_EXERCISES+="${exercise}\n"
