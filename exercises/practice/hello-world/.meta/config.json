@@ -1,0 +1,26 @@
+{
+  "authors": [
+    "parkerl"
+  ],
+  "contributors": [
+    "Average-user",
+    "heneryville",
+    "jackhughesweb",
+    "jesperp",
+    "kytrinyx"
+  ],
+  "files": {
+    "solution": [
+      "hello_world.pl"
+    ],
+    "test": [
+      "hello_world_tests.plt"
+    ],
+    "example": [
+      ".meta/hello_world.example.pl"
+    ]
+  },
+  "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",
+  "source": "This is an exercise to introduce users to using Exercism",
+  "source_url": "https://en.wikipedia.org/wiki/%22Hello,_world!%22_program"
+}

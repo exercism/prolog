@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "qjd2413"
+  ],
+  "contributors": [
+    "parkerl"
+  ],
+  "files": {
+    "solution": [
+      "leap.pl"
+    ],
+    "test": [
+      "leap_tests.plt"
+    ],
+    "example": [
+      ".meta/leap.example.pl"
+    ]
+  },
+  "blurb": "Given a year, report if it is a leap year.",
+  "source": "CodeRanch Cattle Drive, Assignment 3",
+  "source_url": "https://coderanch.com/t/718816/Leap"
+}

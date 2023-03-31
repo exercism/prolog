@@ -1,164 +1,289 @@
 {
   "language": "Prolog",
+  "slug": "prolog",
   "active": true,
+  "status": {
+    "concept_exercises": false,
+    "test_runner": true,
+    "representer": false,
+    "analyzer": false
+  },
   "blurb": "Prolog is a general-purpose logic programming language associated with artificial intelligence and computational linguistics.",
-  "exercises": [
+  "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 4,
+    "highlightjs_language": "prolog"
+  },
+  "test_runner": {
+    "average_run_time": 1.0
+  },
+  "files": {
+    "solution": [
+      "%{snake_slug}.pl"
+    ],
+    "test": [
+      "%{snake_slug}_tests.plt"
+    ],
+    "example": [
+      ".meta/%{snake_slug}.example.pl"
+    ],
+    "exemplar": [
+      ".meta/%{snake_slug}.exemplar.pl"
+    ]
+  },
+  "exercises": {
+    "concept": [],
+    "practice": [
+      {
+        "slug": "hello-world",
+        "name": "Hello World",
+        "uuid": "68a85ec5-acdd-4f4f-9b9e-a5e39f1f7ac0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "queen-attack",
+        "name": "Queen Attack",
+        "uuid": "e4e1ed2c-d93c-4e8f-a395-53ce6d7135f1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "triangle",
+        "name": "Triangle",
+        "uuid": "a3c467cd-b2f2-43a8-9a81-d60490645c59",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "isogram",
+        "name": "Isogram",
+        "uuid": "10ed3b8e-d093-41e2-9f2a-4e5fc3172e71",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "binary",
+        "name": "Binary",
+        "uuid": "ee8e835f-1cbf-4ff4-a8f2-c641bc4045cc",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "math"
+        ]
+      },
+      {
+        "slug": "rna-transcription",
+        "name": "RNA Transcription",
+        "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "anagram",
+        "name": "Anagram",
+        "uuid": "3e059acb-37dc-44ed-bd06-91c5e1fdd8ba",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "pascals-triangle",
+        "name": "Pascal's Triangle",
+        "uuid": "b7022a0f-9fda-4144-ae1e-11615bac0f56",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "math"
+        ]
+      },
+      {
+        "slug": "dominoes",
+        "name": "Dominoes",
+        "uuid": "0dd8e1c8-d94e-4977-b9c8-ad5b0ff33f98",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "complex-numbers",
+        "name": "Complex Numbers",
+        "uuid": "3a03d907-73b3-41b8-99ab-583fe98807d7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "math"
+        ]
+      },
+      {
+        "slug": "grains",
+        "name": "Grains",
+        "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "hamming",
+        "name": "Hamming",
+        "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "leap",
+        "name": "Leap",
+        "uuid": "9b6c4536-8f84-46cd-80cc-e80d77803a7b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "nucleotide-count",
+        "name": "Nucleotide Count",
+        "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "satellite",
+        "name": "Satellite",
+        "uuid": "27856806-0dee-409f-8047-357de07b914d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "binary_trees",
+          "recursion",
+          "tree_traversals"
+        ]
+      },
+      {
+        "slug": "space-age",
+        "name": "Space Age",
+        "uuid": "2b72a411-b07f-4e89-bfdf-2ed3fce256fe",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "spiral-matrix",
+        "name": "Spiral Matrix",
+        "uuid": "77b99980-1922-41b8-8c44-fc964725e9a4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      },
+      {
+        "slug": "sum-of-multiples",
+        "name": "Sum of Multiples",
+        "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "math"
+        ]
+      },
+      {
+        "slug": "wordy",
+        "name": "Wordy",
+        "uuid": "de3a48e8-6409-4a73-ac0f-66239b1d45c9",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "parsing"
+        ]
+      },
+      {
+        "slug": "zebra-puzzle",
+        "name": "Zebra Puzzle",
+        "uuid": "7b7a02a8-8a52-496d-8d04-60558545d4f7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1        
+      },
+      {
+        "slug": "collatz-conjecture",
+        "name": "Collatz Conjecture",
+        "uuid": "e6cebdbb-5b5c-4d87-a3f0-b8ec6d2438bf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      }
+    ]
+  },
+  "concepts": [],
+  "key_features": [
     {
-      "slug": "hello-world",
-      "uuid": "68a85ec5-acdd-4f4f-9b9e-a5e39f1f7ac0",
-      "core": true,
-      "auto_approve": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
+      "title": "Compatible",
+      "content": "SWI-Prolog offers a comprehensive set of built-in predicates, covering many established standards.",
+      "icon": "interop"
     },
     {
-      "slug": "queen-attack",
-      "uuid": "e4e1ed2c-d93c-4e8f-a395-53ce6d7135f1",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
+      "title": "Simplicity",
+      "content": "A single language element, called a clause, is the basis of all prolog relations and programs.",
+      "icon": "small"
     },
     {
-      "slug": "triangle",
-      "uuid": "a3c467cd-b2f2-43a8-9a81-d60490645c59",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
+      "title": "Declarative",
+      "content": "Prolog focuses on what holds true about solutions, rather than how it is implemented.",
+      "icon": "multi-paradigm"
     },
     {
-      "slug": "isogram",
-      "uuid": "10ed3b8e-d093-41e2-9f2a-4e5fc3172e71",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
+      "title": "Logical",
+      "content": "Prolog is based on the rules of logic, with execution being a form of logical resolution.",
+      "icon": "scientific"
     },
     {
-      "slug": "binary",
-      "uuid": "ee8e835f-1cbf-4ff4-a8f2-c641bc4045cc",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
+      "title": "Homoiconic",
+      "content": "Prolog programs are also valid prolog terms, programs can interact with other prolog programs.",
+      "icon": "homoiconic"
     },
     {
-      "slug": "rna-transcription",
-      "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "anagram",
-      "uuid": "3e059acb-37dc-44ed-bd06-91c5e1fdd8ba",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "pascals-triangle",
-      "uuid": "b7022a0f-9fda-4144-ae1e-11615bac0f56",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
-    },
-    {
-      "slug": "dominoes",
-      "uuid": "0dd8e1c8-d94e-4977-b9c8-ad5b0ff33f98",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "satellite",
-      "uuid": "27856806-0dee-409f-8047-357de07b914d",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "binary_trees",
-        "recursion",
-        "tree_traversals"
-      ]
-    },
-    {
-      "slug": "spiral-matrix",
-      "uuid": "77b99980-1922-41b8-8c44-fc964725e9a4",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "nucleotide-count",
-      "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "hamming",
-      "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "complex-numbers",
-      "uuid": "3a03d907-73b3-41b8-99ab-583fe98807d7",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
-    },
-    {
-      "slug": "sum-of-multiples",
-      "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
-    },
-    {
-      "slug": "leap",
-      "uuid": "9b6c4536-8f84-46cd-80cc-e80d77803a7b",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "space-age",
-      "uuid": "2b72a411-b07f-4e89-bfdf-2ed3fce256fe",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
-    },
-    {
-      "slug": "grains",
-      "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": []
+      "title": "Portable",
+      "content": "Implementations exist for Unix/Linux, Windows, MacOS platforms with targets to WebAssembly (WASM).",
+      "icon": "portable"
     }
+  ],
+  "tags": [
+    "paradigm/declarative",
+    "paradigm/logic",
+    "typing/dynamic",
+    "execution_mode/interpreted",
+    "platform/windows",
+    "platform/mac",
+    "platform/linux",
+    "platform/android",
+    "runtime/language_specific",
+    "runtime/wasmtime",
+    "used_for/artificial_intelligence",
+    "used_for/backends",
+    "used_for/cross_platform_development"
   ]
 }
