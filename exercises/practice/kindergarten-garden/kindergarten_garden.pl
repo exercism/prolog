@@ -1,0 +1,1 @@
+garden(Garden, Child, Plants).
