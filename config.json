@@ -538,6 +538,11 @@
         "slug": "phone-number",
         "name": "Phone Number",
         "uuid": "4d26388f-be54-4326-bdb9-06e1f8fb78b7",
+      },
+      {
+        "slug": "two-bucket",
+        "name": "Two Bucket",
+        "uuid": "15140d7a-7379-4337-923a-235aa1ca1282",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
