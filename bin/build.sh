@@ -5,7 +5,7 @@ set -euo pipefail
 declare -i TEST_RESULT=0
 FAILED_EXERCISES=''
 
-for example_file in $(find exercises -type f -name '*.example')
+for example_file in $(find exercises/practice -type f -name '*.example')
 do
     echo "${example_file}"
     example_dir=$(dirname "${example_file}")

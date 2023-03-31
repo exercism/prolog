@@ -26,10 +26,10 @@
       "%{snake_slug}_tests.plt"
     ],
     "example": [
-      ".meta/%{snake_slug}.example"
+      ".meta/%{snake_slug}.example.pl"
     ],
     "exemplar": [
-      ".meta/%{snake_slug}.exemplar"
+      ".meta/%{snake_slug}.exemplar.pl"
     ]
   },
   "exercises": {

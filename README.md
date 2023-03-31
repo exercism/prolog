@@ -40,7 +40,7 @@ READMEs are constructed using shared metadata, which lives in the [exercism/x-co
 
 - Each problem should have a test suite, an example solution, and a template
 file for the real implementation. The example solution should have the
-`.example` file extension.
+`.example.pl` file extension.
 
 - Each test file should have code like the following at the top of the file.
   This allows the tests to be run on CI and configures tests to be skipped with
