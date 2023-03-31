@@ -7,7 +7,8 @@ pending :-
 :- begin_tests(nucleotide_counting).
 
     test(empty_dna_strand_has_no_adenosine, condition(true)) :-
-        nucleotide_count('', [('A', 0) | _ ]), !.
+        nucleotide_count('', Counts),
+        member(('A', 0), Counts), !.
 
     test(repetitive_cytidine_gets_counted, condition(pending)) :-
         nucleotide_count('CCCCC', Counts),
@@ -18,9 +19,11 @@ pending :-
         member(('T', 1), Counts), !.
 
     test(counts_only_thymidine, condition(pending)) :-
-        nucleotide_count(
-            'AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC',
-            [ ('A' ,20), ('C' , 12), ('G' , 17), ('T', 21) ]), !.
+        nucleotide_count('AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC', Counts),
+        member(('A', 20), Counts),
+        member(('C', 12), Counts),
+        member(('G', 17), Counts),
+        member(('T', 21), Counts), !.
 
     test(fails_when_not_dns, [fail, condition(pending)]) :-
         nucleotide_count('JOHNNYAPPLESEED', _), !.
