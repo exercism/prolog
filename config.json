@@ -226,7 +226,7 @@
         "uuid": "7b7a02a8-8a52-496d-8d04-60558545d4f7",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1        
+        "difficulty": 1
       },
       {
         "slug": "collatz-conjecture",
@@ -248,6 +248,14 @@
         "slug": "armstrong-numbers",
         "name": "Armstrong Numbers",
         "uuid": "cfb0f01d-7856-4221-9a50-4fc169e3dfd2",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "reverse-string",
+        "name": "Reverse-String",
+        "uuid": "e4c6f67e-7ffb-4db4-b1c5-1fdc140f29ad",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
