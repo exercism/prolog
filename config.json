@@ -226,7 +226,7 @@
         "uuid": "7b7a02a8-8a52-496d-8d04-60558545d4f7",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1        
+        "difficulty": 1
       },
       {
         "slug": "collatz-conjecture",
@@ -248,6 +248,14 @@
         "slug": "armstrong-numbers",
         "name": "Armstrong Numbers",
         "uuid": "cfb0f01d-7856-4221-9a50-4fc169e3dfd2",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "raindrops",
+        "name": "Raindrops",
+        "uuid": "6c69b71e-484c-4fac-a0e9-8051065394ab",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
