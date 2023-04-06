@@ -261,6 +261,14 @@
         "difficulty": 1
       },
       {
+        "slug": "killer-sudoku-helper",
+        "name": "Killer-Sudoku-Helper",
+        "uuid": "e9861f89-8e31-4f87-ac67-4124035570da",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "knapsack",
         "name": "Knapsack",
         "uuid": "23501ff9-87a6-43e0-9e89-1a76beda9b88",
