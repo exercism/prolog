@@ -35,7 +35,7 @@ exercise_dir="exercises/practice/${slug}"
 touch "${exercise_dir}/.meta/${snake_name}.example.pl"
 touch "${exercise_dir}/${snake_name}.pl"
 
-cat <<EOT >> "${exercise_dir}/.meta/${snake_name}_tests.plt"
+cat <<EOT >> "${exercise_dir}/${snake_name}_tests.plt"
 pending :-
     current_prolog_flag(argv, ['--all'|_]).
 pending :-
