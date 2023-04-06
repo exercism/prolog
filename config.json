@@ -261,6 +261,14 @@
         "difficulty": 1
       },
       {
+        "slug": "pangram",
+        "name": "Pangram",
+        "uuid": "e62f3932-130a-4540-b0d8-38c5ced44b7b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "killer-sudoku-helper",
         "name": "Killer-Sudoku-Helper",
         "uuid": "e9861f89-8e31-4f87-ac67-4124035570da",

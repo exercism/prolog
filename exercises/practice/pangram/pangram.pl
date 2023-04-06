@@ -1,0 +1,2 @@
+pangram(Sentence).
+   
