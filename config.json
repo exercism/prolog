@@ -245,6 +245,14 @@
         "difficulty": 1
       },
       {
+        "slug": "change",
+        "name": "Change",
+        "uuid": "7e1807fa-a305-4412-9a53-ed51c484e66c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "armstrong-numbers",
         "name": "Armstrong Numbers",
         "uuid": "cfb0f01d-7856-4221-9a50-4fc169e3dfd2",
