@@ -6,13 +6,13 @@ pending :-
 
 :- begin_tests(armstrong_numbers).
 
-    test(zero_is_an_armstrong number, condition(true)) :-
+    test(zero_is_an_armstrong_number, condition(true)) :-
         armstrong_number(0).
 
     test(single_digit_numbers_are_armstrong_numbers, condition(pending)) :-
         armstrong_number(5).
 
-    test(there_are_no_two_digit_ armstrong_numbers, [fail, condition(pending)]) :-
+    test(there_are_no_two_digit_armstrong_numbers, [fail, condition(pending)]) :-
         armstrong_number(10).
 
     test(three_digit_number_that_is_an_armstrong_number, condition(pending)) :-
