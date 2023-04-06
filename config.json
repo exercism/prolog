@@ -261,6 +261,14 @@
         "difficulty": 1
       },
       {
+        "slug": "knapsack",
+        "name": "Knapsack",
+        "uuid": "23501ff9-87a6-43e0-9e89-1a76beda9b88",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "flatten-array",
         "name": "Flatten-Array",
         "uuid": "e2c5b596-f886-4c99-96e6-adca68b7a712",
