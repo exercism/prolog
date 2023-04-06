@@ -253,6 +253,14 @@
         "difficulty": 1
       },
       {
+        "slug": "reverse-string",
+        "name": "Reverse-String",
+        "uuid": "e4c6f67e-7ffb-4db4-b1c5-1fdc140f29ad",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "raindrops",
         "name": "Raindrops",
         "uuid": "6c69b71e-484c-4fac-a0e9-8051065394ab",
