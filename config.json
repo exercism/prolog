@@ -309,6 +309,14 @@
         "difficulty": 1
       },
       {
+        "slug": "two-fer",
+        "name": "Two-Fer",
+        "uuid": "84b4ed13-0223-467d-9894-2f3d5dc46647",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "difference-of-squares",
         "name": "Difference-Of-Squares",
         "uuid": "dcaaf329-c4d7-4cc3-b6fa-8161c13f02ad",
