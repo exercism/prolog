@@ -1,4 +1,5 @@
 # Exercism Prolog Track
+
 ![Configlet Status](https://github.com/exercism/prolog/workflows/configlet/badge.svg)
 ![Exercise Test Status](https://github.com/exercism/prolog/workflows/prolog%20%2F%20main/badge.svg)
 
@@ -63,7 +64,6 @@ test(hello_world_with_a_name, condition(pending)) :-
 
 All the tests for Exercism Prolog Track exercises can be run from the top level of the repo with `bin/build.sh`.
 Please run this command before submitting your PR.
-
 
 ### [SWI Prolog icon](https://github.com/exercism/prolog/tree/master/img/icon.png)
 
