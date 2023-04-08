@@ -1,0 +1,1 @@
+hey(Sentence, Response).
