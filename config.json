@@ -331,6 +331,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "costume-ball",
+        "name": "Costume Ball",
+        "uuid": "9f6b94e4-8b47-40d1-b32c-45cafddef5e3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
