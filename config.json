@@ -333,6 +333,14 @@
         "difficulty": 1
       },
       {
+        "slug": "run-length-encoding",
+        "name": "Run-Length-Encoding",
+        "uuid": "0fe1f2de-d2d5-4703-b90f-369c07b52973",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "roman-numerals",
         "name": "Roman-Numerals",
         "uuid": "8e580a87-3ec8-4175-866d-864ab87710ac",
