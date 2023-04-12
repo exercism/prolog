@@ -1,0 +1,1 @@
+abbreviate(Sentence, Acromym).
