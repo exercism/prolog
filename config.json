@@ -355,6 +355,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "etl",
+        "name": "Etl",
+        "uuid": "6e90da13-9ba9-43eb-9e5e-e165c038ec46",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
