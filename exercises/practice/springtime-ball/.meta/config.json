@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "erikschierboom"
+  ],
+  "files": {
+    "solution": [
+      "springtime_ball.pl"
+    ],
+    "test": [
+      "springtime_ball_tests.plt"
+    ],
+    "example": [
+      ".meta/springtime_ball.example.pl"
+    ]
+  },
+  "blurb": "Solve the Costume Ball puzzle.",
+  "source": "Inspired by Dell - Math Puzzles Logic Problems, Jan 2002 p.15"
+}

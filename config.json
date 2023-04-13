@@ -19,18 +19,10 @@
     "average_run_time": 1.0
   },
   "files": {
-    "solution": [
-      "%{snake_slug}.pl"
-    ],
-    "test": [
-      "%{snake_slug}_tests.plt"
-    ],
-    "example": [
-      ".meta/%{snake_slug}.example.pl"
-    ],
-    "exemplar": [
-      ".meta/%{snake_slug}.exemplar.pl"
-    ]
+    "solution": ["%{snake_slug}.pl"],
+    "test": ["%{snake_slug}_tests.plt"],
+    "example": [".meta/%{snake_slug}.example.pl"],
+    "exemplar": [".meta/%{snake_slug}.exemplar.pl"]
   },
   "exercises": {
     "concept": [],
@@ -78,9 +70,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "rna-transcription",
@@ -107,9 +97,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "dominoes",
@@ -127,9 +115,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "grains",
@@ -174,11 +160,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "binary_trees",
-          "recursion",
-          "tree_traversals"
-        ]
+        "topics": ["binary_trees", "recursion", "tree_traversals"]
       },
       {
         "slug": "space-age",
@@ -205,9 +187,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "wordy",
@@ -216,9 +196,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "parsing"
-        ]
+        "topics": ["parsing"]
       },
       {
         "slug": "zebra-puzzle",
@@ -333,7 +311,7 @@
         "difficulty": 1
       },
       {
-        "slug": "costume-ball",
+        "slug": "springtime-ball",
         "name": "Costume Ball",
         "uuid": "9f6b94e4-8b47-40d1-b32c-45cafddef5e3",
         "practices": [],
