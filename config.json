@@ -363,6 +363,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "floored",
+        "name": "Floored",
+        "uuid": "b80f8356-0337-41c7-a783-2146473115eb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
