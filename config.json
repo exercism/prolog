@@ -365,6 +365,14 @@
         "difficulty": 1
       },
       {
+        "slug": "garden-party",
+        "name": "Garden-Party",
+        "uuid": "1cdfa272-1720-473f-a30f-7722f6b72bb7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "cheryls-birthday",
         "name": "cheryl's Birthday",
         "uuid": "18fb98a9-9aa7-4343-bc02-63996241f1eb",
