@@ -1,0 +1,2 @@
+floor(Name, Floor).
+    
