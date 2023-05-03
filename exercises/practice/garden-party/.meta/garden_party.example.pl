@@ -3,12 +3,13 @@ solve(Solution) :-
     member([aisha,tagine,_], Solution),
     member([emma,_,amasi], Solution),
     member([_,frybread,tonic], Solution),
-    member([mei,DMei,lassi], Solution),
+    member([mei,_,lassi], Solution),
     member([winona,DWinona,_], Solution),
+    member([_,DLassi,lassi], Solution),
     permutation([D1,D2,D3,D4], [pad_thai, frybread, tagine, biryani]),
     permutation([B1,B2,B3,B4], [tonic, lassi, kombucha, amasi]),
     DWinona \= pad_thai,
-    DMei \= biryani,
+    DLassi \= biryani,
     !.
 
 beverage(Chef, Beverage) :-

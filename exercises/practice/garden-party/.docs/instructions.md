@@ -7,7 +7,7 @@ You don't know exactly who cooked which dish and who brought what beverage, but 
 3. The chef who prepares Frybread brings Tonic.
 4. Mei brings Lassi.
 5. Winona does not prepare Pad Thai.
-6. The chef who brings the Amasi did not cook the Biryani
+6. The chef who brings the Lassi did not cook the Biryani
 
 Based on these clues, figure out:
 
