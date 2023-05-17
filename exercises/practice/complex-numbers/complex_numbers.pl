@@ -1,11 +1,11 @@
-real(false).
-imaginary(false).
+real(C, R).
+imaginary(C, I).
 
-conjugate(false).
-abs(false).
+conjugate(C, Conjugate).
+abs(C1, Abs).
 
-add(false).
-sub(false).
+add(C1, C2, CAdd).
+sub(C1, C2, CSub).
 
-mul(false).
-div(false).
+mul(C1, C2, CMul).
+div(C1, C2, CDiv).

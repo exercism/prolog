@@ -21,13 +21,13 @@ pending :-
 :- begin_tests(imaginary_part).
 
     test(imaginary_part_of_a_purely_real_number, condition(pending)) :-
-        imaginary((1,0),R), R =:= 0.
+        imaginary((1,0),I), I =:= 0.
 
     test(imaginary_part_of_a_purely_imaginary_number, condition(pending)) :-
-        imaginary((0,1),R), R =:= 1.
+        imaginary((0,1),I), I =:= 1.
 
     test(imaginary_part_of_a_number_with_real_and_imaginary_part, condition(pending)) :-
-        imaginary((1,2),R), R =:= 2.
+        imaginary((1,2),I), I =:= 2.
 
 :- end_tests(imaginary_part).
 
@@ -91,22 +91,22 @@ pending :-
 :- begin_tests(absolute_value).
 
     test(absolute_value_of_a_positive_purely_real_number, condition(pending)) :-
-        abs((5,0), R), R =:= 5.
+        abs((5,0), Abs), Abs =:= 5.
 
     test(absolute_value_of_a_negative_purely_real_number, condition(pending)) :-
-        abs((-5,0), R), R =:= 5.
+        abs((-5,0), Abs), Abs =:= 5.
 
     test(absolute_value_of_a_positive_purely_imaginary_number, condition(pending)) :-
-        abs((0,5), R), R =:= 5.
+        abs((0,5), Abs), Abs =:= 5.
 
     test(absolute_value_of_a_negative_purely_real_number, condition(pending)) :-
-        abs((0,-5), R), R =:= 5.
+        abs((0,-5), Abs), Abs =:= 5.
 
     test(absolute_value_of_a_number_with_real_and_imaginary_part, condition(pending)) :-
-        abs((3,4), R), R =:= 5.
+        abs((3,4), Abs), Abs =:= 5.
 
     test(absolute_value_of_larger_number_with_real_and_imaginary_part, condition(pending)) :- 
-        abs((68, 285), R), R =:= 293.
+        abs((68, 285), Abs), Abs =:= 293.
 
 :- end_tests(absolute_value).
 
