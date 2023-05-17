@@ -1,1 +1,1 @@
-spiral(false).
+spiral(Size, Matrix).
