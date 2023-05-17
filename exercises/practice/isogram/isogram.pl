@@ -1,1 +1,1 @@
-isogram(false).
+isogram(Phrase).
