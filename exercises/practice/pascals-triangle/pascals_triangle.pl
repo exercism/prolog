@@ -1,1 +1,1 @@
-pascal(false).
+pascal(NumRows, Rows).
