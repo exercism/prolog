@@ -1,6 +1,5 @@
 pending :-
-    current_prolog_flag(argv, Rows),
-        Rows == ['--all'|_].
+    current_prolog_flag(argv, ['--all'|_]).
 pending :-
     write('\nA TEST IS PENDING!\n'),
     fail.
@@ -9,7 +8,7 @@ pending :-
 
     test(zero_rows, condition(true)) :-
         pascal(0, Rows),
-      Rows == [].
+        Rows == [].
 
     test(single_row, condition(pending)) :-
         pascal(1, Rows),
