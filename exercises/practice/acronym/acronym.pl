@@ -1,1 +1,1 @@
-abbreviate(Sentence, Acromym).
+abbreviate(Sentence, Acronym).
