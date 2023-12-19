@@ -19,13 +19,20 @@
     "average_run_time": 1
   },
   "files": {
-    "solution": ["%{snake_slug}.pl"],
-    "test": ["%{snake_slug}_tests.plt"],
-    "example": [".meta/%{snake_slug}.example.pl"],
-    "exemplar": [".meta/%{snake_slug}.exemplar.pl"]
+    "solution": [
+      "%{snake_slug}.pl"
+    ],
+    "test": [
+      "%{snake_slug}_tests.plt"
+    ],
+    "example": [
+      ".meta/%{snake_slug}.example.pl"
+    ],
+    "exemplar": [
+      ".meta/%{snake_slug}.exemplar.pl"
+    ]
   },
   "exercises": {
-    "concept": [],
     "practice": [
       {
         "slug": "hello-world",
@@ -33,8 +40,7 @@
         "uuid": "68a85ec5-acdd-4f4f-9b9e-a5e39f1f7ac0",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "queen-attack",
@@ -42,8 +48,7 @@
         "uuid": "e4e1ed2c-d93c-4e8f-a395-53ce6d7135f1",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "triangle",
@@ -51,8 +56,7 @@
         "uuid": "a3c467cd-b2f2-43a8-9a81-d60490645c59",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "isogram",
@@ -60,8 +64,7 @@
         "uuid": "10ed3b8e-d093-41e2-9f2a-4e5fc3172e71",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "binary",
@@ -70,7 +73,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["math"]
+        "topics": [
+          "math"
+        ]
       },
       {
         "slug": "rna-transcription",
@@ -78,8 +83,7 @@
         "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "anagram",
@@ -87,8 +91,7 @@
         "uuid": "3e059acb-37dc-44ed-bd06-91c5e1fdd8ba",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "pascals-triangle",
@@ -97,7 +100,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["math"]
+        "topics": [
+          "math"
+        ]
       },
       {
         "slug": "dominoes",
@@ -105,8 +110,7 @@
         "uuid": "0dd8e1c8-d94e-4977-b9c8-ad5b0ff33f98",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "complex-numbers",
@@ -115,7 +119,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["math"]
+        "topics": [
+          "math"
+        ]
       },
       {
         "slug": "grains",
@@ -123,8 +129,7 @@
         "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "hamming",
@@ -132,8 +137,7 @@
         "uuid": "8449608f-b55e-452f-b65a-720914dde9af",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "leap",
@@ -141,8 +145,7 @@
         "uuid": "9b6c4536-8f84-46cd-80cc-e80d77803a7b",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "nucleotide-count",
@@ -150,8 +153,7 @@
         "uuid": "09ed3b8e-d093-44e2-9f3a-5e5fc3172e71",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "satellite",
@@ -160,7 +162,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["binary_trees", "recursion", "tree_traversals"]
+        "topics": [
+          "binary_trees",
+          "recursion",
+          "tree_traversals"
+        ]
       },
       {
         "slug": "space-age",
@@ -168,8 +174,7 @@
         "uuid": "2b72a411-b07f-4e89-bfdf-2ed3fce256fe",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "spiral-matrix",
@@ -177,8 +182,7 @@
         "uuid": "77b99980-1922-41b8-8c44-fc964725e9a4",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": []
+        "difficulty": 1
       },
       {
         "slug": "sum-of-multiples",
@@ -187,7 +191,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["math"]
+        "topics": [
+          "math"
+        ]
       },
       {
         "slug": "wordy",
@@ -196,7 +202,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["parsing"]
+        "topics": [
+          "parsing"
+        ]
       },
       {
         "slug": "zebra-puzzle",
@@ -368,7 +376,6 @@
       }
     ]
   },
-  "concepts": [],
   "key_features": [
     {
       "title": "Compatible",
@@ -402,16 +409,16 @@
     }
   ],
   "tags": [
+    "execution_mode/interpreted",
     "paradigm/declarative",
     "paradigm/logic",
-    "typing/dynamic",
-    "execution_mode/interpreted",
-    "platform/windows",
-    "platform/mac",
-    "platform/linux",
     "platform/android",
+    "platform/linux",
+    "platform/mac",
+    "platform/windows",
     "runtime/language_specific",
     "runtime/wasmtime",
+    "typing/dynamic",
     "used_for/artificial_intelligence",
     "used_for/backends",
     "used_for/cross_platform_development"
