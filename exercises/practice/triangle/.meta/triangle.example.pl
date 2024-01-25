@@ -1,14 +1,15 @@
-triangle(Side, Side, Side, "equilateral") :-
-    valid_triangle(Side, Side, Side), !.
+triangle(Side1, Side2, Side3, "equilateral") :-
+      Side1 =:= Side2,
+      Side2 =:= Side3,
+      valid_triangle(Side1, Side2, Side3).
 
-triangle(SideEq, SideEq, OtherSide, "isosceles") :-
-    valid_triangle(SideEq, SideEq, OtherSide), !.
-
-triangle(SideEq, OtherSide, SideEq, "isosceles") :-
-    valid_triangle(SideEq, SideEq, OtherSide), !.
-
-triangle(OtherSide, SideEq, SideEq, "isosceles") :-
-    valid_triangle(SideEq, SideEq, OtherSide), !.
+triangle(Side1, Side2, Side3, "isosceles") :-
+    (
+	Side1 =:= Side2
+    ;	Side1 =:= Side3
+    ;	Side2 =:= Side3
+    ),
+    valid_triangle(Side1, Side2, Side3).
 
 triangle(Side1, Side2, Side3, "scalene") :-
     \+ triangle(Side1, Side2, Side3, "equilateral"),
@@ -25,3 +26,4 @@ valid_triangle(Side1, Side2, Side3) :-
     Side1 \== 0,
     Side2 \== 0,
     Side3 \== 0.
+
