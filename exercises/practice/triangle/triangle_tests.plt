@@ -21,7 +21,7 @@ pending :-
     test(all_sides_are_floats_and_equal, condition(pending)) :-
         triangle((0.5), (0.5), (0.5), "equilateral").
 
-    test(all_sides_are_equal_but_mixed_types, condition(true)) :-
+    test(all_sides_are_equal_but_mixed_types, [condition(true), condition(bonus)]) :-
         triangle(2, 2.0, 2, "equilateral").
 
 :- end_tests(equilateral_triangle).
@@ -55,7 +55,7 @@ pending :-
     test(sides_may_be_floats, condition(pending)) :-
         triangle((0.5), (0.4), (0.5), "isosceles").
 
-    test(sides_are_a_mix, condition(pending)) :-
+    test(sides_are_a_mix, [condition(pending), condition(bonus)]) :-
         triangle(5, 4, 5.0, "isosceles").
 
 :- end_tests(isosceles_triangle).
@@ -64,6 +64,9 @@ pending :-
 
     test(no_sides_are_equal, condition(pending)) :-
         triangle(5, 4, 6, "scalene").
+
+    test(no_sides_are_equal_mixed, [condition(pending), condition(bonus)]) :-
+        triangle(5.0, 4, 6, "scalene").
 
     test(all_sides_are_equal, [fail, condition(pending)]) :-
         triangle(4, 4, 4, "scalene").
