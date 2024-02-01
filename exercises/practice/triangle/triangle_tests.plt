@@ -4,9 +4,16 @@ pending :-
     write('\nA TEST IS PENDING!\n'),
     fail.
 
+bonus :-
+    current_prolog_flag(argv, ['--bonus'|_]).
+
+bonus :-
+    write('\nA TEST IS BONUS!\n'),
+    fail.
+
 :- begin_tests(equilateral_triangle).
 
-    test(all_sides_are_equal, condition(true)) :-
+    test(all_sides_are_equal) :-
         triangle(2, 2, 2, "equilateral").
 
     test(any_side_is_unequal, [fail, condition(pending)]) :-
@@ -21,7 +28,7 @@ pending :-
     test(all_sides_are_floats_and_equal, condition(pending)) :-
         triangle((0.5), (0.5), (0.5), "equilateral").
 
-    test(all_sides_are_equal_but_mixed_types, [condition(true), condition(bonus)]) :-
+    test(all_sides_are_equal_but_mixed_types, condition(bonus)) :-
         triangle(2, 2.0, 2, "equilateral").
 
 :- end_tests(equilateral_triangle).
@@ -55,7 +62,7 @@ pending :-
     test(sides_may_be_floats, condition(pending)) :-
         triangle((0.5), (0.4), (0.5), "isosceles").
 
-    test(sides_are_a_mix, [condition(pending), condition(bonus)]) :-
+    test(sides_are_a_mix, condition(bonus)) :-
         triangle(5, 4, 5.0, "isosceles").
 
 :- end_tests(isosceles_triangle).
@@ -65,7 +72,7 @@ pending :-
     test(no_sides_are_equal, condition(pending)) :-
         triangle(5, 4, 6, "scalene").
 
-    test(no_sides_are_equal_mixed, [condition(pending), condition(bonus)]) :-
+    test(no_sides_are_equal_mixed, condition(bonus)) :-
         triangle(5.0, 4, 6, "scalene").
 
     test(all_sides_are_equal, [fail, condition(pending)]) :-
