@@ -52,7 +52,7 @@ pending :-
     test(sides_may_be_floats, condition(pending)) :-
         triangle((0.5), (0.4), (0.5), "isosceles").
 
-    :- end_tests(isosceles_triangle).
+:- end_tests(isosceles_triangle).
 
 :- begin_tests(scalene_triangle).
 
