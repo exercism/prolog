@@ -1,19 +1,6 @@
 # Instructions Append
 
-## Bonus: Type equality not enforced
+## Bonus: mixed types
 
-Tests don't validate if parameters aren't of the same ***type***.
-
-### Implication
-
-A solution with ***strict type equality*** would be **passing**.
-
-Implication of such a solution:
-```prolog
-?- triangle(1.0, 1, 1).
-false
-```
-
-### Resolution
-
-The above example would necessarily be ***true***, for a solution passing the bonus tests.
+If you're up for it, there are a couple of bonus tests where the types of the arguments are not all the same.
+These tests are optional, so you don't _have_ to solve before submitting your solution.
