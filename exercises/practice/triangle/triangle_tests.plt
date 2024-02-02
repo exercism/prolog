@@ -78,7 +78,7 @@ test(small_scalene_triangle_with_floating_point_values, condition(pending)) :-
 bonus :-
     current_prolog_flag(argv, ['--bonus'|_]).
 
-:- begin_tests(triangle_bonus, condition(bonus)).
+:- begin_tests(triangle_bonus, [condition(bonus)]).
 
 test(all_sides_are_equal_but_mixed_types) :-
     triangle(2, 2.0, 2, "equilateral").
