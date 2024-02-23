@@ -10,20 +10,14 @@ jobs:
   ci:
     runs-on: ubuntu-22.04
 
-    strategy:
-      fail-fast: false
-      matrix:
-        prolog-branch: [stable, devel]
-        prolog-version: [latest]
-
     steps:
       - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744
 
-      - name: Use swi-prolog ${{ matrix.prolog-branch }}-${{ matrix.prolog-version }}
+      - name: Setup swi-prolog
         uses: logtalk-actions/setup-swi-prolog@bf7d8c39fb30a188646579176d805496421c4ee5
         with:
-          swi-prolog-branch: ${{ matrix.prolog-branch }}
-          swi-prolog-version: ${{ matrix.prolog-version }}
+          swi-prolog-branch: stable
+          swi-prolog-version: latest
 
       - name: Run exercism/prolog ci (runs tests) for all exercises
         run: bin/build.sh
