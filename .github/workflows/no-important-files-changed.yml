@@ -28,7 +28,7 @@ jobs:
           set -exo pipefail
 
           git remote set-branches origin main
-          git fetch --depth 1 origin main
+          git fetch origin main
 
           for changed_file in $(git diff --diff-filter=M --name-only origin/main); do
             if ! echo "${changed_file}" | grep --quiet --extended-regexp 'exercises/(practice|concept)' ; then
