@@ -2,7 +2,7 @@ name: prolog / main
 
 on:
   push:
-    branches: [master, main]
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
