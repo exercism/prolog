@@ -1,3 +1,5 @@
+name: No important files changed
+
 on:
   pull_request_target:
     types: [opened, reopened]
@@ -13,8 +15,9 @@ permissions:
   pull-requests: write
 
 jobs:
-  comment:
-    runs-on: ubuntu-latest
+  no_important_files_changed:
+    name: No important files changed
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
