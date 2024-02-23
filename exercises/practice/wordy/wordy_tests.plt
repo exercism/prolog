@@ -1,7 +1,7 @@
 pending :-
     current_prolog_flag(argv, ['--all'|_]).
 pending :-
-    write('\nA TEST IS PENDING!\n'),
+    write('\nA TEST IS PENDING!!!!\n'),
     fail.
 
 :- begin_tests(plus).
