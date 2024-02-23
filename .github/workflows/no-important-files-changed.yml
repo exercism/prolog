@@ -5,7 +5,8 @@ on:
     types: [opened, reopened]
     branches: [main]
     paths:
-      - "exercises/*/**"
+      - "exercises/concept/**"
+      - "exercises/practice/**"
       - "!exercises/*/*/.meta/config.json"
       - "!exercises/*/*/.meta/tests.toml"
       - "!exercises/*/*/.docs/instructions.md"
@@ -30,15 +31,18 @@ jobs:
           git remote set-branches origin main
           git fetch origin main
 
-          for changed_file in $(git diff --diff-filter=M --name-only origin/main); do
-            if ! echo "${changed_file}" | grep --quiet --extended-regexp 'exercises/(practice|concept)' ; then
-              continue
-            fi
+          git diff --diff-filter=M --name-only origin/main
 
+          for changed_file in $(git diff --diff-filter=M --name-only origin/main); do
             slug="$(echo "${changed_file}" | sed --regexp-extended 's#exercises/[^/]+/([^/]+)/.*#\1#' )"
             path_before_slug="$(echo "${changed_file}" | sed --regexp-extended "s#(.*)/${slug}/.*#\\1#" )"
             path_after_slug="$( echo "${changed_file}" | sed --regexp-extended "s#.*/${slug}/(.*)#\\1#" )"
             config_json_file="${path_before_slug}/${slug}/.meta/config.json"
+
+            echo "slug: $slug"
+            echo "path_before_slug: $path_before_slug"
+            echo "path_after_slug: $path_after_slug"
+            echo "config_json_file: $config_json_file"
 
             if ! [ -f "${config_json_file}" ]; then
               # cannot determine if important files changed without .meta/config.json
@@ -46,6 +50,7 @@ jobs:
             fi
 
             changed=$(jq --arg path "${path_after_slug}" '[.files.test, .files.invalidator, .files.editor] | flatten | index($path) != null' "${config_json_file}")
+            echo "changed: $changed"
             echo "important_files_changed=${changed}" >> "$GITHUB_OUTPUT"
           done
 
