@@ -1,6 +1,6 @@
 # Instructions
 
-In this exercise, let's try to solve a classic problem.
+In this exercise, let's try to solve a classic problem!!!!
 
 Bob is a thief.
 After months of careful planning, he finally manages to crack the security systems of a high-class apartment.
@@ -18,10 +18,10 @@ Items will be represented as a list of pairs, `wi` and `vi`, where the first ele
 For example:
 
 Items: [
-  { "weight": 5, "value": 10 },
-  { "weight": 4, "value": 40 },
-  { "weight": 6, "value": 30 },
-  { "weight": 4, "value": 50 }
+{ "weight": 5, "value": 10 },
+{ "weight": 4, "value": 40 },
+{ "weight": 6, "value": 30 },
+{ "weight": 4, "value": 50 }
 ]
 
 Knapsack Limit: 10
