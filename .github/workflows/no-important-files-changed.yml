@@ -1,66 +1,17 @@
-name: No important files changed
-
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, reopened]
-    branches: [main]
-
-# permissions:
-#   pull-requests: write
 
 jobs:
-  no_important_files_changed:
-    name: No important files changed
-    runs-on: ubuntu-22.04
+  comment:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-
-      - name: Check if important files changed
-        id: check
-        run: |
-          set -exo pipefail
-
-          # fetch a ref to the main branch so we can diff against it
-          git remote set-branches origin main
-          git fetch --depth 1 origin main
-
-          for changed_file in $(git diff --diff-filter=M --name-only origin/main); do
-            if ! echo "$changed_file" | grep --quiet --extended-regexp 'exercises/(practice|concept)' ; then
-              continue
-            fi
-            slug="$(echo "$changed_file" | sed --regexp-extended 's#exercises/[^/]+/([^/]+)/.*#\1#' )"
-            path_before_slug="$(echo "$changed_file" | sed --regexp-extended "s#(.*)/$slug/.*#\\1#" )"
-            path_after_slug="$( echo "$changed_file" | sed --regexp-extended "s#.*/$slug/(.*)#\\1#" )"
-
-            if ! [ -f "$path_before_slug/$slug/.meta/config.json" ]; then
-              # cannot determine if important files changed without .meta/config.json
-              continue
-            fi
-
-            #  returns 0 if the filter matches, 1 otherwise
-            #  | contains($path_after_slug)
-            if jq --exit-status \
-              --arg path_after_slug "$path_after_slug" \
-              '[.files.test, .files.invalidator, .files.editor] | flatten | index($path_after_slug)' \
-              "$path_before_slug/$slug/.meta/config.json" \
-              > /dev/null;
-            then
-              echo "important_files_changed=true" >> "$GITHUB_OUTPUT"
-              exit 0
-            fi
-          done
-
-          echo "important_files_changed=false" >> "$GITHUB_OUTPUT"
-
-      - name: Suggest to add [no important files changed]
-        if: steps.check.outputs.important_files_changed == 'true'
-        env:
-          GITHUB_TOKEN: "${{ github.token }}"
-        run: |
-          gh api \
-            --method POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            /repos/exercism/prolog/issues/302/comments \
-            -f body='Me too'
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '👋 Thanks for reporting!'
+            })
