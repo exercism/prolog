@@ -3,11 +3,11 @@ on:
     types: [opened, reopened]
     branches: [main]
     paths:
-      - exercises/*/**
-      - !exercises/*/*/.meta/config.json
-      - !exercises/*/*/.meta/tests.toml
-      - !exercises/*/*/.docs/instructions.md
-      - !exercises/*/*/.docs/introduction.md
+      - "exercises/*/**"
+      - "!exercises/*/*/.meta/config.json"
+      - "!exercises/*/*/.meta/tests.toml"
+      - "!exercises/*/*/.docs/instructions.md"
+      - "!exercises/*/*/.docs/introduction.md"
 
 permissions:
   pull-requests: write
