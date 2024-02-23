@@ -2,7 +2,7 @@ name: No important files changed
 
 on:
   pull_request_target:
-    types: [opened, reopened]
+    types: [opened]
     branches: [main]
     paths:
       - "exercises/concept/**"
@@ -42,18 +42,12 @@ jobs:
             path_after_slug="$( echo "${changed_file}" | sed --regexp-extended "s#.*/${slug}/(.*)#\\1#" )"
             config_json_file="${path_before_slug}/${slug}/.meta/config.json"
 
-            echo "slug: $slug"
-            echo "path_before_slug: $path_before_slug"
-            echo "path_after_slug: $path_after_slug"
-            echo "config_json_file: $config_json_file"
-
             if ! [ -f "${config_json_file}" ]; then
               # cannot determine if important files changed without .meta/config.json
               continue
             fi
 
             changed=$(jq --arg path "${path_after_slug}" '[.files.test, .files.invalidator, .files.editor] | flatten | index($path) != null' "${config_json_file}")
-            echo "changed: $changed"
             echo "important_files_changed=${changed}" >> "$GITHUB_OUTPUT"
           done
 
