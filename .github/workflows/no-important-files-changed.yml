@@ -7,10 +7,10 @@ on:
     paths:
       - "exercises/concept/**"
       - "exercises/practice/**"
-      - "!exercises/*/*/.meta/config.json"
-      - "!exercises/*/*/.meta/tests.toml"
-      - "!exercises/*/*/.docs/instructions.md"
-      - "!exercises/*/*/.docs/introduction.md"
+      - "!exercises/*/*/.approaches/**"
+      - "!exercises/*/*/.articles/**"
+      - "!exercises/*/*/.docs/**"
+      - "!exercises/*/*/.meta/**"
 
 permissions:
   pull-requests: write
