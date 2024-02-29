@@ -3,7 +3,7 @@ words(Sentence, Words) :-
     maplist([Word,Acc]>>(split_string(Word,"-", "",Acc)), W0, W1),
     flatten(W1, W2),
     maplist(string_upper, W2, W3),
-    delete(W3, "", Words).
+    delete(W3, "", Words)...
 
 abbreviate_word(Word, Letter) :-
     string_chars(Word, Letters),
