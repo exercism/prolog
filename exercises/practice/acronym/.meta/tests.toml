@@ -7,7 +7,7 @@
 # - Preserve any other key/value pair
 #
 # As user-added comments (using the # character) will be removed when this file
-# is regenerated, comments can be added via a `comment` key.
+# is regenerated, comments can be added via a `comment` key....
 
 [1e22cceb-c5e4-4562-9afe-aef07ad1eaf4]
 description = "basic"
