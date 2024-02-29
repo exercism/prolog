@@ -1,17 +1,9 @@
 {
-  "authors": [
-    "erikschierboom"
-  ],
+  "authors": ["erikschierboommmm"],
   "files": {
-    "solution": [
-      "bob.pl"
-    ],
-    "test": [
-      "bob_tests.plt"
-    ],
-    "example": [
-      ".meta/bob.example.pl"
-    ]
+    "solution": ["bob.pl"],
+    "test": ["bob_tests.plt"],
+    "example": [".meta/bob.example.pl"]
   },
   "blurb": "Bob is a lackadaisical teenager. In conversation, his responses are very limited.",
   "source": "Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial.",
