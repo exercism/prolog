@@ -1,6 +1,6 @@
 # Help
 
-To get help if you're having trouble, you can use one of the following resources:
+To get help if you're having trouble, you can use one of the following resources:!!!
 
 - [SWI Prolog Documentation](http://www.swi-prolog.org)
 - [Tutorials and Resources](http://www.swi-prolog.org/Links.html)
