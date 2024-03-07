@@ -18,7 +18,8 @@ snake_name=$(echo "${slug}" | sed 's/-/_/g')
 bin/fetch-configlet
 bin/configlet create --practice-exercise "${slug}"
 
-test_file=$(jq -r '.files.test[0]' "exercises/practice/${slug}/.meta/config.json")
+exercise_dir="exercises/practice/${slug}"
+test_file=$(jq --arg dir "${exercise_dir}" -r '$dir + "/" + .files.test[0]' "exercises/practice/${slug}/.meta/config.json")
 cat <<EOT >> "${test_file}"
 pending :-
     current_prolog_flag(argv, ['--all'|_]).
