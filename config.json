@@ -413,6 +413,25 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+<<<<<<< Updated upstream
+=======
+      },
+      {
+        "slug": "eliuds-eggs",
+        "name": "Eliud's Eggs",
+        "uuid": "7543d6e7-4aa3-44bf-8bef-dce3b700f06e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "largest-series-product",
+        "name": "Largest Series Product",
+        "uuid": "ace3d853-c939-4214-917b-b8356efb4f29",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+>>>>>>> Stashed changes
       }
     ]
   },
