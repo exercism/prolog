@@ -1,4 +1,5 @@
 :- use_module(library(dcg/basics)).
+:- set_prolog_flag(double_quotes, chars).
 
 parentheses --> "(", balanced, ")".
 brackets    --> "[", balanced, "]".
@@ -8,9 +9,9 @@ balanced --> (parentheses | brackets | braces), balanced.
 balanced --> non_bracket, balanced.
 balanced --> [].
 
-non_bracket --> [C], { string_codes("()[]{}", Codes), \+ member(C, Codes) }.
+non_bracket --> [C], { \+ member(C, "()[]{}") }.
 
 paired(String) :-
-    string_codes(String, Codes),
-    phrase(balanced, Codes),
+    string_chars(String, Chars),
+    phrase(balanced, Chars),
     !.
