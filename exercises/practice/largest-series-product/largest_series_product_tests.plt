@@ -7,31 +7,31 @@ pending :-
 :- begin_tests(largest_series_product).
 
     test(finds_the_largest_product_if_span_equals_length, condition(true)) :-
-        largest_product("29", 2, 18).
+        largest_product("29", 2, Product), Product == 18.
 
     test(can_find_the_largest_product_of_2_with_numbers_in_order, condition(pending)) :-
-        largest_product("0123456789", 2, 72).
+        largest_product("0123456789", 2, Product), Product == 72.
 
     test(can_find_the_largest_product_of_2, condition(pending)) :-
-        largest_product("576802143", 2, 48).
+        largest_product("576802143", 2, Product), Product == 48.
 
     test(can_find_the_largest_product_of_3_with_numbers_in_order, condition(pending)) :-
-        largest_product("0123456789", 3, 504).
+        largest_product("0123456789", 3, Product), Product == 504.
 
     test(can_find_the_largest_product_of_3, condition(pending)) :-
-        largest_product("1027839564", 3, 270).
+        largest_product("1027839564", 3, Product), Product == 270.
 
     test(can_find_the_largest_product_of_5_with_numbers_in_order, condition(pending)) :-
-        largest_product("0123456789", 5, 15120).
+        largest_product("0123456789", 5, Product), Product == 15120.
 
     test(can_get_the_largest_product_of_a_big_number, condition(pending)) :-    
-        largest_product("73167176531330624919225119674426574742355349194934", 6, 23520).
+        largest_product("73167176531330624919225119674426574742355349194934", 6, Product), Product == 23520.
 
     test(reports_zero_if_the_only_digits_are_zero, condition(pending)) :-
-        largest_product("0000", 2, 0).
+        largest_product("0000", 2, Product), Product == 0.
 
     test(reports_zero_if_all_spans_include_zero, condition(pending)) :-
-        largest_product("99099", 3, 0).
+        largest_product("99099", 3, Product), Product == 0.
 
     test(rejects_span_longer_than_string_length, [fail, condition(pending)]) :-
         largest_product("123", 4, _).

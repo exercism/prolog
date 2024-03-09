@@ -7,16 +7,20 @@ pending :-
 :- begin_tests(sieve).
 
     test(no_primes_under_two, condition(true)) :-
-        primes(1, []).
+        primes(1, Primes),
+        Primes == [].
 
     test(find_first_prime, condition(pending)) :-
-        primes(2, [2]).
+        primes(2, Primes),
+        Primes == [2].
 
     test(find_primes_up_to_10, condition(pending)) :-
-        primes(10, [2, 3, 5, 7]).
+        primes(10, Primes),
+        Primes == [2, 3, 5, 7].
 
     test(limit_is_prime, condition(pending)) :-
-        primes(13, [2, 3, 5, 7, 11, 13]).
+        primes(13, Primes),
+        Primes == [2, 3, 5, 7, 11, 13].
 
     test(find_primes_up_to_1000, condition(pending)) :-
         primes(1000, Primes),
