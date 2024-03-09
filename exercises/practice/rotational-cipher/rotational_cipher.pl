@@ -1,0 +1,1 @@
+rotate(Plaintext, Amount, Ciphertext).
