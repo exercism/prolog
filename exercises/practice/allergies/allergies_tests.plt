@@ -127,33 +127,43 @@ pending :-
         allergic_to(255, cats).
 
     test(no_allergies, condition(pending)) :-
-        allergies(0, []).
+        allergies(0, Allergies),
+        Allergies == [].
 
     test(just_eggs, condition(pending)) :-
-        allergies(1, [eggs]).
+        allergies(1, Allergies),
+        Allergies == [eggs].
 
     test(just_peanuts, condition(pending)) :-
-        allergies(2, [peanuts]).
+        allergies(2, Allergies),
+        Allergies == [peanuts].
 
     test(just_strawberries, condition(pending)) :-
-        allergies(8, [strawberries]).
+        allergies(8, Allergies),
+        Allergies == [strawberries].
 
     test(eggs_and_peanuts, condition(pending)) :-
-        allergies(3, [eggs, peanuts]).
+        allergies(3, Allergies),
+        Allergies == [eggs, peanuts].
 
     test(more_than_eggs_but_not_peanuts, condition(pending)) :-
-        allergies(5, [eggs, shellfish]).
+        allergies(5, Allergies),
+        Allergies == [eggs, shellfish].
 
     test(lots_of_stuff, condition(pending)) :-
-        allergies(248, [strawberries, tomatoes, chocolate, pollen, cats]).
+        allergies(248, Allergies),
+        Allergies == [strawberries, tomatoes, chocolate, pollen, cats].
 
     test(everything, condition(pending)) :-
-        allergies(255, [eggs, peanuts, shellfish, strawberries, tomatoes, chocolate, pollen, cats]).
+        allergies(255, Allergies),
+        Allergies == [eggs, peanuts, shellfish, strawberries, tomatoes, chocolate, pollen, cats].
 
     test(no_allergen_score_parts, condition(pending)) :-
-        allergies(509, [eggs, shellfish, strawberries, tomatoes, chocolate, pollen, cats]).
+        allergies(509, Allergies),
+        Allergies == [eggs, shellfish, strawberries, tomatoes, chocolate, pollen, cats].
 
     test(no_allergen_score_parts_without_highest_valid_score, condition(pending)) :-
-        allergies(257, [eggs]).
+        allergies(257, Allergies),
+        Allergies == [eggs].
 
 :- end_tests(allergies).
