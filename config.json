@@ -469,6 +469,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "all-your-base",
+        "name": "All Your Base",
+        "uuid": "89830caa-c376-41ad-9041-aa33d2be5fdd",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
