@@ -19,5 +19,5 @@ jobs:
           swi-prolog-branch: stable
           swi-prolog-version: latest
 
-      - name: Run exercism/prolog ci (runs tests) for all exercises
-        run: bin/build.sh
+      - name: Verify all exercises
+        run: bin/verify-exercises.sh
