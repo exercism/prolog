@@ -1,0 +1,1 @@
+score(Dice, Category, Score).
