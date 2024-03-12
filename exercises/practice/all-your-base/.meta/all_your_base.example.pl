@@ -1,16 +1,16 @@
 :- use_module(library(clpfd)).
 
-base(_, [], Value, Value) :- !.
-base(Base, [Digit|Digits], Acc, Value) :-
+decimal_base(_, [], Decimal, Decimal) :- !.
+decimal_base(Base, [Digit|Digits], Acc, Decimal) :-
     MaxDigit #= Base - 1,
     Digit in 0..MaxDigit,
     NewAcc #= Acc * Base + Digit,
-    base(Base, Digits, NewAcc, Value).
+    decimal_base(Base, Digits, NewAcc, Decimal).
 
-base(_, [0], 0) :- !.
-base(Base, Digits, Value) :- base(Base, Digits, 0, Value).
+decimal_base(_, [0], 0) :- !.
+decimal_base(Base, Digits, Decimal) :- decimal_base(Base, Digits, 0, Decimal).
 
 rebase(InputBase, InputDigits, OutputBase, OutputDigits) :-
     InputBase #>= 2, OutputBase #>= 2,
-    base(InputBase, InputDigits, Decimal),
-    base(OutputBase, OutputDigits, Decimal).
+    decimal_base(InputBase, InputDigits, Decimal),
+    decimal_base(OutputBase, OutputDigits, Decimal).
