@@ -1,0 +1,1 @@
+translate(English, PigLatin).
