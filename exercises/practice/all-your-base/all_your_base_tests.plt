@@ -34,7 +34,7 @@ pending :-
         rebase(16, [2, 10], 3, Rebased),
         Rebased == [1, 1, 2, 0].
 
-    test(15_bit_integer, condition(pending)) :-
+    test(fifteen_bit_integer, condition(pending)) :-
         rebase(97, [3, 46, 60], 73, Rebased),
         Rebased == [6, 10, 45].
 
