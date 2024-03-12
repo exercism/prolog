@@ -21,3 +21,6 @@ jobs:
 
       - name: Verify all exercises
         run: bin/verify-exercises.sh
+
+      - name: Verify test files
+        run: bin/verify-test-files.sh
