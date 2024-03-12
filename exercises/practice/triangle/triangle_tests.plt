@@ -6,7 +6,7 @@ pending :-
 
 :- begin_tests(equilateral_triangle).
 
-    test(all_sides_are_equal) :-
+    test(all_sides_are_equal, condition(true)) :-
         triangle(2, 2, 2, "equilateral").
 
     test(any_side_is_unequal, [fail, condition(pending)]) :-
