@@ -517,6 +517,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "meetup",
+        "name": "Meetup",
+        "uuid": "2590ef6c-3643-4d20-8f81-224d430ad3eb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
