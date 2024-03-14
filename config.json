@@ -525,6 +525,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "phone-number",
+        "name": "Phone Number",
+        "uuid": "4d26388f-be54-4326-bdb9-06e1f8fb78b7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
