@@ -519,6 +519,14 @@
         "difficulty": 1
       },
       {
+        "slug": "meetup",
+        "name": "Meetup",
+        "uuid": "2590ef6c-3643-4d20-8f81-224d430ad3eb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "robot-simulator",
         "name": "Robot Simulator",
         "uuid": "9529a227-2196-4f0c-bf40-03a1be8419a6",

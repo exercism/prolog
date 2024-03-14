@@ -19,6 +19,9 @@ jobs:
           swi-prolog-branch: stable
           swi-prolog-version: latest
 
+      - name: Install packages
+        run: swipl pack install date_time -y
+
       - name: Verify all exercises
         run: bin/verify-exercises.sh
 
