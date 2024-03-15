@@ -1,29 +1,36 @@
-move((SizeX,SizeY),(X,Y),(Z,SizeY)) :- Z is X - (SizeY - Y), Z >= 0.
-move((SizeX,SizeY),(X,Y),(Z,0)) :- Z is X + Y, Z =< SizeX.
-move((SizeX,SizeY),(X,Y),(SizeX,Z)) :- Z is Y - (SizeX - X), Z >=0.
-move((SizeX,SizeY),(X,Y),(0,Z)) :- Z is X + Y, Z =< SizeY.
+:- use_module(library(clpfd)).
 
-move((SizeX,SizeY),(0,Y),(SizeX,Y)).
-move((SizeX,SizeY),(X,0),(X,SizeY)).
+move(state(one(0, CapOne), Two), state(one(CapOne, CapOne), Two)) :- !.
+move(state(One, two(CapTwo, CapTwo)), state(One, two(0, CapTwo))) :- !.
+move(state(one(FillOne, CapOne), two(FillTwo, CapTwo)), state(one(NewFillOne, CapOne), two(NewFillTwo, CapTwo))) :-
+    FillOne #> 0,
+    Fill #= min(FillOne, CapTwo - FillTwo),
+    NewFillOne #= FillOne - Fill,
+    NewFillTwo #= FillTwo + Fill, !.
 
-move((SizeX,SizeY),(X,Y),(X,0)) :- Y > 0.
-move((SizeX,SizeY),(X,Y),(0,Y)) :- X > 0.
+solve(Goal, StartBucket, State, State, Moves, Measurement) :- 
+    State = state(one(Goal, _), two(FillTwo, _)), 
+    (StartBucket == one -> GoalBucket = one; GoalBucket = two),
+    Measurement = measurement(moves(Moves), goalBucket(GoalBucket), otherBucket(FillTwo)),
+    !.
+solve(Goal, StartBucket, State, State, Moves, Measurement) :-    
+    State = state(one(FillOne, _), two(Goal, _)), 
+    (StartBucket == one -> GoalBucket = two; GoalBucket = one),
+    Measurement = measurement(moves(Moves), goalBucket(GoalBucket), otherBucket(FillOne)),
+    !.
 
-shortest( LS, L ) :-
-  length( L, _),
-  member( L, LS), !.
+solve(Goal, StartBucket, State, Stop, Moves, Measurement) :-
+    move(State, Next),
+    NewMoves is Moves + 1,
+    solve(Goal, StartBucket, Next, Stop, NewMoves, Measurement), !.
 
-measure(Goal,Sizes,State,Moves) :-
-    findall(Xs, do_moves(Goal, Sizes,[(0,0)],Xs),Solutions),
-    shortest(Solutions,[State|Path]),
-    length(Path, Moves).
+initial_state(FirstCapacity, SecondCapacity, one, InitialState) :-
+    InitialState = state(one(0, FirstCapacity), two(0, SecondCapacity)).
+initial_state(FirstCapacity, SecondCapacity, two, InitialState) :-
+    InitialState = state(one(0, SecondCapacity), two(0, FirstCapacity)).
 
-do_moves(Goal,Sizes,[State|T], [(X1,Goal),State|T])
-    :- move(Sizes,State,(X1,Goal)), !.
-    do_moves(Goal,Sizes,[State|T], [(Goal,Y1),State|T])
-    :- move(Sizes,State,(Goal,Y1)), !.
-do_moves(Goal, Sizes,[State|T],Xs) :-
-    move(Sizes,State,NewState), 
-    not(member(NewState,[State|T])),
-    do_moves(Goal, Sizes,[NewState,State|T],Xs).
-
+measure(Goal, FirstCapacity, SecondCapacity, StartBucket, Measurement) :-
+    (Goal #=< FirstCapacity; Goal #=< SecondCapacity),
+    initial_state(FirstCapacity, SecondCapacity, StartBucket, InitialState),
+    solve(Goal, StartBucket, InitialState, Stop, 0, Measurement),
+    !.
