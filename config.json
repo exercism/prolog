@@ -558,6 +558,11 @@
         "prerequisites": [],
         "difficulty": 1
       }
+    ],
+    "foregone": [
+      "circular-buffer",
+      "error-handling",
+      "paasio"
     ]
   },
   "key_features": [
