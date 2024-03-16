@@ -1,0 +1,1 @@
+frequencies(Texts, Frequencies).
