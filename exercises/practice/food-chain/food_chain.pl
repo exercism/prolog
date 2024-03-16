@@ -1,0 +1,1 @@
+recite(StartVerse, EndVerse, Lyrics).
