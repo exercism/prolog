@@ -1,0 +1,1 @@
+annotate(Board, AnnotatedBoard).
