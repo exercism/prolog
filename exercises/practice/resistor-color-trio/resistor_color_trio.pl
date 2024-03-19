@@ -1,0 +1,1 @@
+label(Colors, Label).
