@@ -19,18 +19,10 @@
     "average_run_time": 1
   },
   "files": {
-    "solution": [
-      "%{snake_slug}.pl"
-    ],
-    "test": [
-      "%{snake_slug}_tests.plt"
-    ],
-    "example": [
-      ".meta/%{snake_slug}.example.pl"
-    ],
-    "exemplar": [
-      ".meta/%{snake_slug}.exemplar.pl"
-    ]
+    "solution": ["%{snake_slug}.pl"],
+    "test": ["%{snake_slug}_tests.plt"],
+    "example": [".meta/%{snake_slug}.example.pl"],
+    "exemplar": [".meta/%{snake_slug}.exemplar.pl"]
   },
   "exercises": {
     "practice": [
@@ -73,9 +65,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "rna-transcription",
@@ -100,9 +90,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "dominoes",
@@ -119,9 +107,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "grains",
@@ -162,11 +148,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "binary_trees",
-          "recursion",
-          "tree_traversals"
-        ]
+        "topics": ["binary_trees", "recursion", "tree_traversals"]
       },
       {
         "slug": "space-age",
@@ -191,9 +173,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "wordy",
@@ -202,9 +182,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "parsing"
-        ]
+        "topics": ["parsing"]
       },
       {
         "slug": "zebra-puzzle",
@@ -690,7 +668,11 @@
     "foregone": [
       "circular-buffer",
       "error-handling",
-      "paasio"
+      "hangman",
+      "lens-person",
+      "micro-blog",
+      "paasio",
+      "rest-api"
     ]
   },
   "key_features": [
