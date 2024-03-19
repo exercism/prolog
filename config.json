@@ -629,6 +629,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "strain",
+        "name": "Strain",
+        "uuid": "6d9d642d-ac70-4370-9369-6efcc4756f36",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
