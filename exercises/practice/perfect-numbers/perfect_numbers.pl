@@ -1,0 +1,1 @@
+classify(Number, Classification).
