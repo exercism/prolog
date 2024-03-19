@@ -1,0 +1,1 @@
+value(Colors, Value).
