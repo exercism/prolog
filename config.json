@@ -605,6 +605,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "darts",
+        "name": "Darts",
+        "uuid": "cbea4207-2196-4169-8f45-8c17437fa7c3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [

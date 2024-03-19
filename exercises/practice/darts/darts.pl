@@ -1,0 +1,1 @@
+score(X, Y, Score).
