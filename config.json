@@ -661,6 +661,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "series",
+        "name": "Series",
+        "uuid": "dba42fd2-35ee-4137-9c73-e5883583a073",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
