@@ -725,6 +725,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "clock",
+        "name": "Clock",
+        "uuid": "cca25ac8-ab9a-4b93-bdc4-d90c00d4890d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
