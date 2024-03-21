@@ -841,7 +841,14 @@
       {
         "slug": "sgf-parsing",
         "name": "SGF Parsing",
-        "uuid": "e9e9edd4-30cb-4511-ac38-f54f25c89c32",
+        "uuid": "e9e9edd4-30cb-4511-ac38-f54f25c89c32","practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "book-store",
+        "name": "Book Store",
+        "uuid": "807f6f35-0e89-44b5-a973-37cdfd6305a9",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1

@@ -1,0 +1,1 @@
+total(Basket, Price).
