@@ -753,6 +753,7 @@
     ],
     "foregone": [
       "circular-buffer",
+      "dot-dsl",
       "error-handling",
       "hangman",
       "lens-person",
