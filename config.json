@@ -765,6 +765,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "robot-name",
+        "name": "Robot Name",
+        "uuid": "54eb5f14-2b7c-4201-b38d-a25ce2cdae97",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
