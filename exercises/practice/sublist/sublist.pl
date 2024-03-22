@@ -1,0 +1,1 @@
+sublist(Xs, Xs, Qualification).
