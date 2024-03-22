@@ -797,6 +797,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "house",
+        "name": "House",
+        "uuid": "9ccd7689-ef14-4825-bb00-9e307d2d35ad",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
