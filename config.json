@@ -821,6 +821,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "ocr-numbers",
+        "name": "OCR Numbers",
+        "uuid": "9e78fda4-45ef-4ec8-93b0-dec9f0f6ecba",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
