@@ -841,7 +841,8 @@
       {
         "slug": "sgf-parsing",
         "name": "SGF Parsing",
-        "uuid": "e9e9edd4-30cb-4511-ac38-f54f25c89c32","practices": [],
+        "uuid": "e9e9edd4-30cb-4511-ac38-f54f25c89c32",
+        "practices": [],
         "prerequisites": [],
         "difficulty": 1
       },
