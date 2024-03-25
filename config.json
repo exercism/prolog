@@ -877,6 +877,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "say",
+        "name": "Say",
+        "uuid": "50fe2f01-54d1-4dea-a476-e2aa3e7ffdaa",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
