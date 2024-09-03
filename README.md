@@ -1,6 +1,6 @@
 # Exercism Prolog Track
 
-![Configlet Status](https://github.com/exercism/prolog/workflows/configlet/badge.svg)
+[![Configlet](https://github.com/exercism/prolog/actions/workflows/configlet.yml/badge.svg)](https://github.com/exercism/prolog/actions/workflows/configlet.yml)
 ![Exercise Test Status](https://github.com/exercism/prolog/workflows/prolog%20%2F%20main/badge.svg)
 
 Exercism Exercises in Prolog
