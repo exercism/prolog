@@ -1,0 +1,15 @@
+{
+  "authors": [],
+  "files": {
+    "solution": [
+      "wedding_woes.pl"
+    ],
+    "test": [
+      "wedding_woes_tests.plt"
+    ],
+    "example": [
+      ".meta/wedding_woes.example.pl"
+    ]
+  },
+  "blurb": ""
+}

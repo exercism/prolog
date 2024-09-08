@@ -885,6 +885,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "wedding-woes",
+        "name": "wedding-woes",
+        "uuid": "e11fad7c-c21f-49af-a607-9df50ef5fa41",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
