@@ -16,7 +16,7 @@ You don't know everyone quite as well as you'd like, but here's what you do know
 - Valeria is chatty
 - Esteban likes Malena
 - Malena likes Esteban
-- Rico likes Naran (but not vice versa!)
+- Gustavo likes Valeria (but not vice versa!)
 
 People who like each other can be seated next to each other, but only when they both feel that way.
 Chatty people intermingle easily and can be seated next to anyone.
