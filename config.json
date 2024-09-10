@@ -43,6 +43,14 @@
         "difficulty": 1
       },
       {
+        "slug": "wedding-woes",
+        "name": "wedding-woes",
+        "uuid": "e11fad7c-c21f-49af-a607-9df50ef5fa41",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "queen-attack",
         "name": "Queen Attack",
         "uuid": "e4e1ed2c-d93c-4e8f-a395-53ce6d7135f1",
