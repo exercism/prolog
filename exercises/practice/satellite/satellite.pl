@@ -1,2 +1,1 @@
-
-tree_traversals(Tree, Preorder, Inorder) :- fail.
+tree_traversals(Tree, Preorder, Inorder).
