@@ -893,6 +893,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "global-positioning-system",
+        "name": "Global Positioning System",
+        "uuid": "14d2d6a7-6d6c-4cdf-b0cb-8df1093e8f70",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
