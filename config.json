@@ -909,6 +909,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "binary-puzzle",
+        "name": "Binary Puzzle",
+        "uuid": "3b24f261-3916-4bbf-a52f-5758173ad83e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
