@@ -901,6 +901,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "magic-square",
+        "name": "Magic Square",
+        "uuid": "0dabf6ec-98fb-442c-9e1f-684108a67f26",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
