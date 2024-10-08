@@ -1,6 +1,6 @@
 % Define the 'chatty' fact
 
-% Define the 'lines' fact
+% Define the 'likes' fact
 
 % Define the 'pairing' rule
 
