@@ -142,8 +142,8 @@ pending :-
         string_codes("143.889", Codes),
         phrase(longitude(_, _), Codes).
 
-    test(coordinate_parses_coordinate, [fail, condition(pending)]) :-
-        string_codes("48.8584 N 2.2945 E", Codes),
+    test(coordinate_parses_coordinate, condition(pending)) :-
+        string_codes("48.8584 N, 2.2945 E", Codes),
         phrase(coordinate(Latitude, LatitudeHemisphere, Longitude, LongitudeHemisphere), Codes),
         Latitude =:= 48.8584,
         LatitudeHemisphere == north,

@@ -14,7 +14,7 @@ These are the allowed values for each individual component:
 - `<LONGITUDE_DEGREES>`: a floating-point number in the range 0..180 (inclusive)
 - `<LONGITUDE_HEMISPHERE>`: either `E` or `W`
 
-For example, `"48.8584 N 2.2945 E"` parses into:
+For example, `"48.8584 N, 2.2945 E"` parses into:
 
 - `<LATITUDE_DEGREES>`: 48.8584
 - `<LATITUDE_HEMISPHERE>`: N
