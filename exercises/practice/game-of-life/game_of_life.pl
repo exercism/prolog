@@ -1,0 +1,1 @@
+tick(Current, Next).
