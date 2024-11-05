@@ -1,1 +1,3 @@
-hello_world('Goodbye, Mars!').
+hello_world:-
+write("hello world").
+
