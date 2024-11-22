@@ -13,15 +13,19 @@ do
     exercise=$(basename "${example_file}" .example.pl)
     echo '-------------------------------------------------------'
     echo "Testing ${exercise}"
-    swipl -f  "${example_dir}/${exercise}.example.pl" -s "${exercise_dir}/${exercise}_tests.plt" -g run_tests,halt -t 'halt(1)' -- --all
-    if [ $? -ne 0 ]; then
+    if ! swipl -f "${example_file}" \
+               -s "${exercise_dir}/${exercise}_tests.plt" \
+               -g run_tests,halt \
+               -t 'halt(1)' \
+               --on-error=status \
+               -- --all; then
         TEST_RESULT=1
-        FAILED_EXERCISES+="${exercise}\n"
+        FAILED_EXERCISES+="${example_file}\n"
     fi
 done
 
 if [ "${TEST_RESULT}" -ne 0 ]; then
-    echo "The following exercises failed"
-    printf "${FAILED_EXERCISES}"
+    echo "The following exercises failed:"
+    printf "%b" "${FAILED_EXERCISES}"
     exit "${TEST_RESULT}"
 fi
