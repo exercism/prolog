@@ -35,7 +35,7 @@ pending :-
         Ciphertext == "gifgs rhurx grlm".
 
     test(encode_all_the_letters, condition(pending)) :-
-        encode("The quick brown fox jumps over the lazy dog." Ciphertext),
+        encode("The quick brown fox jumps over the lazy dog.", Ciphertext),
         Ciphertext == "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt".
 
     test(decode_exercism, condition(pending)) :-

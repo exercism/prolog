@@ -10,7 +10,7 @@ pending :-
         Matrix = [[9, 8, 7], [5, 3, 2], [6, 6, 7]],
         saddle_points(Matrix, SaddlePoints),
         sort(SaddlePoints, SortedSaddlePoints),
-        SortedSaddlePoints == [(1, 2)].
+        SortedSaddlePoints == [(2, 1)].
 
     test(can_identify_that_empty_matrix_has_no_saddle_points, condition(pending)) :-
         Matrix = [],
@@ -26,13 +26,13 @@ pending :-
         Matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]],
         saddle_points(Matrix, SaddlePoints),
         sort(SaddlePoints, SortedSaddlePoints),
-        SortedSaddlePoints == [(2, 1), (2, 2), (2, 3)].
+        SortedSaddlePoints == [(1, 2), (2, 2), (3, 2)].
 
     test(can_identify_multiple_saddle_points_in_a_row, condition(pending)) :-
         Matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]],
         saddle_points(Matrix, SaddlePoints),
         sort(SaddlePoints, SortedSaddlePoints),
-        SortedSaddlePoints == [(1, 2), (2, 2), (3, 2)].
+        SortedSaddlePoints == [(2, 1), (2, 2), (2, 3)].
 
     test(can_identify_saddle_point_in_bottom_right_corner, condition(pending)) :-
         Matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]],
@@ -43,18 +43,18 @@ pending :-
         Matrix = [[3, 1, 3], [3, 2, 4]],
         saddle_points(Matrix, SaddlePoints),
         sort(SaddlePoints, SortedSaddlePoints),
-        SortedSaddlePoints == [(1, 1), (3, 1)].
+        SortedSaddlePoints == [(1, 1), (1, 3)].
 
     test(can_identify_that_saddle_points_in_a_single_column_matrix_are_those_with_the_minimum_value, condition(pending)) :-
         Matrix = [[2], [1], [4], [1]],
         saddle_points(Matrix, SaddlePoints),
         sort(SaddlePoints, SortedSaddlePoints),
-        SortedSaddlePoints == [(1, 2), (1, 4)].
+        SortedSaddlePoints == [(2, 1), (4, 1)].
 
     test(can_identify_that_saddle_points_in_a_single_row_matrix_are_those_with_the_maximum_value, condition(pending)) :-
         Matrix = [[2, 5, 3, 5]],
         saddle_points(Matrix, SaddlePoints),
         sort(SaddlePoints, SortedSaddlePoints),
-        SortedSaddlePoints == [(2, 1), (4, 1)].
+        SortedSaddlePoints == [(1, 2), (1, 4)].
 
 :- end_tests(saddle_points).
