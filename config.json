@@ -264,7 +264,7 @@
       },
       {
         "slug": "killer-sudoku-helper",
-        "name": "Killer-Sudoku-Helper",
+        "name": "Killer Sudoku Helper",
         "uuid": "e9861f89-8e31-4f87-ac67-4124035570da",
         "practices": [],
         "prerequisites": [],
@@ -280,7 +280,7 @@
       },
       {
         "slug": "flatten-array",
-        "name": "Flatten-Array",
+        "name": "Flatten Array",
         "uuid": "e2c5b596-f886-4c99-96e6-adca68b7a712",
         "practices": [],
         "prerequisites": [],
@@ -288,7 +288,7 @@
       },
       {
         "slug": "reverse-string",
-        "name": "Reverse-String",
+        "name": "Reverse String",
         "uuid": "e4c6f67e-7ffb-4db4-b1c5-1fdc140f29ad",
         "practices": [],
         "prerequisites": [],
@@ -312,7 +312,7 @@
       },
       {
         "slug": "difference-of-squares",
-        "name": "Difference-Of-Squares",
+        "name": "Difference of Squares",
         "uuid": "dcaaf329-c4d7-4cc3-b6fa-8161c13f02ad",
         "practices": [],
         "prerequisites": [],
@@ -328,7 +328,7 @@
       },
       {
         "slug": "run-length-encoding",
-        "name": "Run-Length-Encoding",
+        "name": "Run-Length Encoding",
         "uuid": "0fe1f2de-d2d5-4703-b90f-369c07b52973",
         "practices": [],
         "prerequisites": [],
@@ -336,7 +336,7 @@
       },
       {
         "slug": "roman-numerals",
-        "name": "Roman-Numerals",
+        "name": "Roman Numerals",
         "uuid": "8e580a87-3ec8-4175-866d-864ab87710ac",
         "practices": [],
         "prerequisites": [],
