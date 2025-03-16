@@ -1,1 +1,1 @@
-rna_transcription(Rna, Dna).
+rna_transcription(Dna, Rna).
