@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "erikschierboom"
+  ],
+  "contributors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "flower_field.pl"
+    ],
+    "test": [
+      "flower_field_tests.plt"
+    ],
+    "example": [
+      ".meta/flower_field.example.pl"
+    ]
+  },
+  "blurb": "Mark all the flowers in a garden."
+}
