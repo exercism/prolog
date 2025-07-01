@@ -596,7 +596,8 @@
         "uuid": "b2a01bf2-1640-418e-9852-34d3db19b78d",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1
+        "difficulty": 1,
+        "status": "deprecated"
       },
       {
         "slug": "high-scores",
@@ -925,6 +926,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4
+      },
+      {
+        "slug": "flower-field",
+        "name": "Flower Field",
+        "uuid": "0ca4e207-8d17-4db3-9d22-31109d90fdc4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ],
     "foregone": [
