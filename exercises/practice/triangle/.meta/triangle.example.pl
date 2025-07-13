@@ -1,7 +1,7 @@
 triangle(Side1, Side2, Side3, "equilateral") :-
       Side1 =:= Side2,
       Side2 =:= Side3,
-      valid_triangle(Side1, Side2, Side3).
+      valid_triangle(Side1, Side2, Side3), !.
 
 triangle(Side1, Side2, Side3, "isosceles") :-
     (
@@ -9,7 +9,7 @@ triangle(Side1, Side2, Side3, "isosceles") :-
     ;	Side1 =:= Side3
     ;	Side2 =:= Side3
     ),
-    valid_triangle(Side1, Side2, Side3).
+    valid_triangle(Side1, Side2, Side3), !.
 
 triangle(Side1, Side2, Side3, "scalene") :-
     \+ triangle(Side1, Side2, Side3, "equilateral"),

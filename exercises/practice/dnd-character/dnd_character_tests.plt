@@ -84,6 +84,7 @@ pending :-
         between(3, 18, Wisdom),
         between(3, 18, Charisma),
         modifier(Constitution, Modifier),
-        Hitpoints =:= 10 + Modifier.
+        Hitpoints =:= 10 + Modifier,
+        !.
 
 :- end_tests(dnd_character).
