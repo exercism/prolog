@@ -224,10 +224,7 @@
         "uuid": "ee8e835f-1cbf-4ff4-a8f2-c641bc4045cc",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4,
-        "topics": [
-          "math"
-        ]
+        "difficulty": 4
       },
       {
         "slug": "binary-search",
@@ -396,10 +393,7 @@
         "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4,
-        "topics": [
-          "math"
-        ]
+        "difficulty": 4
       },
       {
         "slug": "acronym",
@@ -447,10 +441,7 @@
         "uuid": "3a03d907-73b3-41b8-99ab-583fe98807d7",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5,
-        "topics": [
-          "math"
-        ]
+        "difficulty": 5
       },
       {
         "slug": "dnd-character",
@@ -730,10 +721,7 @@
         "uuid": "b7022a0f-9fda-4144-ae1e-11615bac0f56",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6,
-        "topics": [
-          "math"
-        ]
+        "difficulty": 6
       },
       {
         "slug": "pythagorean-triplet",
@@ -829,12 +817,7 @@
         "uuid": "27856806-0dee-409f-8047-357de07b914d",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 7,
-        "topics": [
-          "binary_trees",
-          "recursion",
-          "tree_traversals"
-        ]
+        "difficulty": 7
       },
       {
         "slug": "word-count",
@@ -850,10 +833,7 @@
         "uuid": "de3a48e8-6409-4a73-ac0f-66239b1d45c9",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 7,
-        "topics": [
-          "parsing"
-        ]
+        "difficulty": 7
       },
       {
         "slug": "book-store",
