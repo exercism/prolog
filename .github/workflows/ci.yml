@@ -23,7 +23,7 @@ jobs:
         run: swipl pack install date_time -y
 
       - name: Verify all exercises
-        run: bin/verify-exercises.sh
+        run: bin/verify-exercises
 
       - name: Verify test files
-        run: bin/verify-test-files.sh
+        run: bin/verify-test-files
