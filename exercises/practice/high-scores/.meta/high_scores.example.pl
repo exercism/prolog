@@ -6,7 +6,7 @@ personal_best(Scores, Best) :- max_list(Scores, Best).
 
 personal_top_three(Scores, TopThree) :-
     sort(0, @>=, Scores, Sorted),
-    top_three(Sorted, TopThree).
+    top_three(Sorted, TopThree), !.
 
 top_three([], []).
 top_three([X], [X]).

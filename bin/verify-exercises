@@ -1,31 +1,77 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+# Synopsis:
+# Verify that each exercise's example/exemplar solution passes the tests.
+# You can either verify all exercises or a single exercise.
 
-declare -i TEST_RESULT=0
-FAILED_EXERCISES=''
+# Example: verify all exercises
+# bin/verify-exercises
 
-for example_file in $(find exercises/practice -type f -name '*.example.pl' | sort)
-do
-    echo "${example_file}"
-    example_dir=$(dirname "${example_file}")
-    exercise_dir=$(dirname "${example_dir}")
-    exercise=$(basename "${example_file}" .example.pl)
-    echo '-------------------------------------------------------'
-    echo "Testing ${exercise}"
-    if ! swipl -f "${example_file}" \
-               -s "${exercise_dir}/${exercise}_tests.plt" \
-               -g run_tests,halt \
-               -t 'halt(1)' \
-               --on-error=status \
-               -- --all; then
-        TEST_RESULT=1
-        FAILED_EXERCISES+="${example_file}\n"
-    fi
-done
+# Example: verify single exercise
+# bin/verify-exercises two-fer
 
-if [ "${TEST_RESULT}" -ne 0 ]; then
-    echo "The following exercises failed:"
-    printf "%b" "${FAILED_EXERCISES}"
-    exit "${TEST_RESULT}"
-fi
+set -eo pipefail
+
+die() { echo "$*" >&2; exit 1; }
+
+required_tool() {
+    command -v "${1}" >/dev/null 2>&1 ||
+        die "${1} is required but not installed. Please install it and make sure it's in your PATH."
+}
+
+required_tool jq
+
+copy_example_or_examplar_to_solution() {
+    jq -c '[.files.solution, .files.exemplar // .files.example] | transpose | map({src: .[1], dst: .[0]}) | .[]' .meta/config.json \
+    | while read -r src_and_dst; do
+        cp "$(jq -r '.src' <<< "${src_and_dst}")" "$(jq -r '.dst' <<< "${src_and_dst}")"
+    done
+}
+
+run_tests() {
+    local slug
+
+    slug="${1}"
+    snake_name=$(echo "${slug}" | sed 's/-/_/g')
+    swipl -f "${snake_name}.pl" -s "${snake_name}_tests.plt" -g run_tests,halt -t 'halt(1)' --on-error=status -- --all
+}
+
+verify_exercise() {
+    local dir
+    local slug
+    local tmp_dir
+
+    dir=$(realpath "${1}")
+    slug=$(basename "${dir}")
+    tmp_dir=$(mktemp -d -t "exercism-verify-${slug}-XXXXX")
+
+    echo "Verifying ${slug} exercise..."
+
+    (
+        trap 'rm -rf "$tmp_dir"' EXIT    # remove tempdir when subshell ends
+        cp -r "${dir}/." "${tmp_dir}"
+        cd "${tmp_dir}"
+
+        copy_example_or_examplar_to_solution
+        run_tests "${slug}"
+    )
+}
+
+verify_exercises() {
+    local exercise_slug
+
+    exercise_slug="${1}"
+
+    shopt -s nullglob
+    count=0
+    for exercise_dir in ./exercises/{concept,practice}/${exercise_slug}/; do
+        if [[ -d "${exercise_dir}" ]]; then
+            verify_exercise "${exercise_dir}"
+            ((++count))
+        fi
+    done
+    ((count > 0)) || die 'no matching exercises found!'
+}
+
+exercise_slug="${1:-*}"
+verify_exercises "${exercise_slug}"
