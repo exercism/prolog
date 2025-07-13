@@ -72,7 +72,7 @@
         "uuid": "9f430940-9e6f-4f80-9ae4-0ebcc91cf055",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 9
       },
       {
         "slug": "anagram",
@@ -112,7 +112,7 @@
         "uuid": "ee8e835f-1cbf-4ff4-a8f2-c641bc4045cc",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 4,
         "topics": [
           "math"
         ]
@@ -179,7 +179,7 @@
         "uuid": "18fb98a9-9aa7-4343-bc02-63996241f1eb",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 7
       },
       {
         "slug": "clock",
@@ -203,7 +203,7 @@
         "uuid": "3a03d907-73b3-41b8-99ab-583fe98807d7",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 4,
         "topics": [
           "math"
         ]
@@ -254,7 +254,7 @@
         "uuid": "dcaaf329-c4d7-4cc3-b6fa-8161c13f02ad",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 2
       },
       {
         "slug": "dominoes",
@@ -318,7 +318,7 @@
         "uuid": "1cdfa272-1720-473f-a30f-7722f6b72bb7",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 7
       },
       {
         "slug": "gigasecond",
@@ -350,7 +350,7 @@
         "uuid": "acd10394-f609-4047-9f5f-e3303d8ca2fd",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 3
       },
       {
         "slug": "hamming",
@@ -366,7 +366,7 @@
         "uuid": "68a85ec5-acdd-4f4f-9b9e-a5e39f1f7ac0",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 1
       },
       {
         "slug": "high-scores",
@@ -438,7 +438,7 @@
         "uuid": "9b6c4536-8f84-46cd-80cc-e80d77803a7b",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 2
       },
       {
         "slug": "list-ops",
@@ -494,7 +494,7 @@
         "uuid": "b2a01bf2-1640-418e-9852-34d3db19b78d",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 4,
         "status": "deprecated"
       },
       {
@@ -551,7 +551,7 @@
         "uuid": "b7022a0f-9fda-4144-ae1e-11615bac0f56",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 4,
         "topics": [
           "math"
         ]
@@ -666,7 +666,7 @@
         "uuid": "e4c6f67e-7ffb-4db4-b1c5-1fdc140f29ad",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 1
       },
       {
         "slug": "rna-transcription",
@@ -674,7 +674,7 @@
         "uuid": "e5e2ed3c-d93c-4e8f-a395-53ce6d7135f1",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 2
       },
       {
         "slug": "robot-name",
@@ -730,7 +730,7 @@
         "uuid": "27856806-0dee-409f-8047-357de07b914d",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 4,
         "topics": [
           "binary_trees",
           "recursion",
@@ -743,7 +743,7 @@
         "uuid": "50fe2f01-54d1-4dea-a476-e2aa3e7ffdaa",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 8
       },
       {
         "slug": "scrabble-score",
@@ -847,7 +847,7 @@
         "uuid": "609b17f6-49d9-4c77-8ec4-99a5ca065163",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 4,
         "topics": [
           "math"
         ]
@@ -890,7 +890,7 @@
         "uuid": "e11fad7c-c21f-49af-a607-9df50ef5fa41",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 1
       },
       {
         "slug": "word-count",
@@ -906,7 +906,7 @@
         "uuid": "de3a48e8-6409-4a73-ac0f-66239b1d45c9",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 4,
         "topics": [
           "parsing"
         ]
