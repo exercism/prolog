@@ -42,3 +42,10 @@ pending :-
         float_eq(Age, 158).
 
 :- end_tests(space_age).
+
+:- begin_tests(errors).
+
+    test(unknown_planet, [error(unknown_planet_error), condition(pending)]) :-    
+        space_age("Sun", 680804807, _).
+
+:- end_tests(errors).
