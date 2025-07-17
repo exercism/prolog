@@ -46,6 +46,10 @@ pending :-
         translate("qat", PigLatin),
         PigLatin == "atqay".
 
+    test(word_beginning_with_consonant_and_vowel_containing_qu, condition(pending)) :-
+        translate("liquid", PigLatin),
+        PigLatin == "iquidlay".
+
     test(word_beginning_with_ch, condition(pending)) :-
         translate("chair", PigLatin),
         PigLatin == "airchay".
