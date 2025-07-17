@@ -65,6 +65,12 @@ pending :-
     test(two_sides_are_equal, [fail, condition(pending)]) :-
         triangle(4, 4, 3, "scalene").
 
+    test(first_and_last_sides_are_equal, [fail, condition(pending)]) :-
+        triangle(3, 4, 3, "scalene").
+
+    test(second_and_last_sides_are_equal, [fail, condition(pending)]) :-
+        triangle(4, 3, 3, "scalene").
+
     test(may_not_violate_triangle_inequality, [fail, condition(pending)]) :-
         triangle(7, 3, 2, "scalene").
 

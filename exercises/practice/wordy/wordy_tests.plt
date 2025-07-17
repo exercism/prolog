@@ -4,10 +4,20 @@ pending :-
     write('\nA TEST IS PENDING!\n'),
     fail.
 
-:- begin_tests(plus).
+:- begin_tests(simple).
 
     test(just_a_number, condition(true)) :-
         wordy("What is 5?", 5).
+
+    test(just_a_zero, condition(pending)) :-
+        wordy("What is 0?", 0).
+
+    test(just_a_negative_number, condition(pending)) :-
+        wordy("What is -123?", -123).
+
+:- end_tests(simple).
+
+:- begin_tests(plus).
 
     test(addition, condition(pending)) :-
         wordy("What is 1 plus 1?", 2).
@@ -20,6 +30,12 @@ pending :-
 
     test(large_addition, condition(pending)) :-
         wordy("What is 123 plus 45678?", 45801).
+
+    test(addition_with_zero_left_hand, condition(pending)) :-
+        wordy("What is 0 plus 2?", 2).
+    
+    test(addition_with_zero_right_hand, condition(pending)) :-
+        wordy("What is 3 plus 0?", 3).
 
 :- end_tests(plus).
 :- begin_tests(minus).

@@ -50,4 +50,7 @@ pending :-
     test(attack_fourth_diagonal, condition(pending)) :-
       attack((2,2), (5,5)).
 
+    test(cannot_attack_reflected_diagonals, [fail, condition(pending)]) :-
+      attack((4,1), (2,5)).
+
 :- end_tests(attack_tests).

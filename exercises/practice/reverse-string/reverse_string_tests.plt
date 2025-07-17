@@ -30,4 +30,8 @@ pending :-
         string_reverse("drawer", Reversed),
         Reversed == "reward".
 
+    test(wide_character, condition(pending)) :-
+        string_reverse("子猫", Reversed),
+        Reversed == "猫子".
+
 :- end_tests(reverse_string).

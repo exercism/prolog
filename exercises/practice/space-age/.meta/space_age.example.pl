@@ -10,7 +10,10 @@ period("Neptune", 164.79132).
 convYearSec(Year, Sec) :-
     Year is Sec / 31557600.
 
+% Main predicate with error handling for unknown planets
 space_age(Planet, AgeSec, Years) :-
-    period(Planet, Conv),
-    convYearSec(AgeYear, AgeSec),
-    Years is AgeYear / Conv, !.
+    ( period(Planet, Conv) ->
+        convYearSec(AgeYear, AgeSec),
+        Years is AgeYear / Conv
+    ; throw(error(unknown_planet_error, not_a_planet))
+    ).

@@ -105,5 +105,9 @@ pending :-
     test(translation_stops_if_stop_codon_in_middle_of_six_codon_sequence, condition(pending)) :-
         translate("UGGUGUUAUUAAUGGUUU", Proteins),
         Proteins == ["Tryptophan", "Cysteine", "Tyrosine"].
+    
+    test(sequence_of_two_non_stop_codons_does_not_translate_into_a_stop_codon, condition(pending)) :-
+        translate("AUGAUG", Proteins),
+        Proteins == ["Methionine", "Methionine"].
 
 :- end_tests(protein_translation).

@@ -110,4 +110,8 @@ test(number_3999_is_mmmcmxcix, condition(pending)) :-
     convert(3999, Numeral),
     Numeral == "MMMCMXCIX".
 
+test(number_3888_is_mmmdccclxxxviii, condition(pending)) :-
+    convert(3888, Numeral),
+    Numeral == "MMMDCCCLXXXVIII".
+
 :- end_tests(roman_numerals).
