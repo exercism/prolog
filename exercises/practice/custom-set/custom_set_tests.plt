@@ -197,6 +197,13 @@ pending :-
         create_set([1, 3], Expected),
         Difference == Expected.
 
+    test(difference_removes_all_duplicates, condition(pending)) :-
+        create_set([1, 1], Set1),
+        create_set([1], Set2),
+        difference(Set1, Set2, Difference),
+        create_set([], Expected),
+        Difference == Expected.
+
     test(union_of_empty_sets_is_an_empty_set, condition(pending)) :-
         create_set(Set1),
         create_set(Set2),
