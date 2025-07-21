@@ -42,6 +42,10 @@ pending :-
         fewest_coins([1, 5, 10, 21, 25], 0, Change),
         Change == [].
 
+    test(greedy_approach_is_not_always_optimal, condition(pending)) :-
+        fewest_coins([1, 10, 11], 20, Change),
+        Change == [10, 10].
+
     test(error_testing_for_change_smaller_than_the_smallest_of_coins, [fail, condition(pending)]) :-
         fewest_coins([5, 10], 3, _).
 
