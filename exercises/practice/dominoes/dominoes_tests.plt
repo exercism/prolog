@@ -33,6 +33,9 @@ pending :-
     test(disconnected_single_isolated, [fail, condition(pending)]) :-
         can_chain([(1,2), (2,3), (3,1), (4,4)]).
 
+    test(three_loops, [fail, condition(pending)]) :-
+        can_chain([(1, 2),(2, 3),(3, 1),(4, 5),(5, 6),(6, 4)]).
+
     test(need_backtrack, condition(pending)) :-
         can_chain([(1,2),(2,3),(3,1),(2,4),(2,4)]).
 
