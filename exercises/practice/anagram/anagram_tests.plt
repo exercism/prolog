@@ -63,6 +63,10 @@ pending :-
     test(does_not_detect_a_anagram_if_the_original_word_is_repeated, condition(pending)) :-
         anagram("go", ["go Go GO"], Anagrams),
         Anagrams == [].
+    
+    test(does_not_detect_a_anagram_if_the_original_word_is_repeated_without_whitespace, condition(pending)) :-
+        anagram("go", ["goGoGO"], Anagrams),
+        Anagrams == [].
 
     test(anagrams_must_use_all_letters_exactly_once, condition(pending)) :-
         anagram("tapper", ["patter"], Anagrams),
@@ -79,5 +83,13 @@ pending :-
     test(capital_word_is_not_own_anagram, condition(pending)) :-
         anagram("BANANA", ["Banana"], Anagrams),
         Anagrams == [].
+
+    test(word_other_than_itself_can_be_anagram, condition(pending)) :-
+        anagram("LISTEN", ["Listen","Silent","LISTEN"], Anagrams),
+        Anagrams == ["Silent"].
+    
+    test(handles_greek_letters_cases, condition(pending)) :-
+        anagram("ΑΒΓ", ["ΒΓΑ", "ΒΓΔ", "γβα", "αβγ"], Anagrams),
+        Anagrams == ["ΒΓΑ", "γβα"].
 
 :- end_tests(anagram).
