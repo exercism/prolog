@@ -31,7 +31,7 @@ pending :-
         pairing(malena, esteban).
 
     test(two_chatty_people_make_a_good_pairing, condition(pending)) :-
-        pairing(gustavo, jaime).
+        pairing(gustavo, valeria).
 
     test(one_chatty_person_make_a_good_pairing_with_anyone, condition(pending)) :-
         pairing(valeria, jaime).
