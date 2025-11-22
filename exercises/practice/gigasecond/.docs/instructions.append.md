@@ -3,7 +3,7 @@
 ## Working with Dates in Prolog
 
 Prolog's built-in support for dates is [fairly rudimentary][built-in-dates-support].
-While you can solve this exercise with just what's built into Prolog, a much nicer way to work with dates is via the [date_time package][date_time-package].
+While you can solve this exercise with just what's built into Prolog, a much nicer way to work with dates is via the [date_time package][date-time-package].
 
 ### Installing the date_time package
 
@@ -32,9 +32,9 @@ Ad the following code to the top of your solution file to use the `date_time` pa
 ```
 
 ```exercism/note
-Tip: the [source of the date_time package][https://www.swi-prolog.org/pack/file_details/date_time/prolog/date_time.pl?show=src] is well documented and be a great help!
+Tip: the [source of the date_time package][date-time-package-source] is well documented and be a great help!
 ```
 
 [built-in-dates-support]: https://www.swi-prolog.org/pldoc/man?section=timedate
-[date_time_package]: https://www.swi-prolog.org/pack/list?p=date_time
-[date_time-package-source]: https://www.swi-prolog.org/pack/file_details/date_time/prolog/date_time.pl?show=src
+[date-time-package]: https://www.swi-prolog.org/pack/list?p=date_time
+[date-time-package-source]: https://www.swi-prolog.org/pack/file_details/date_time/prolog/date_time.pl?show=src
