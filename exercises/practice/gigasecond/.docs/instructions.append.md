@@ -19,9 +19,9 @@ If that doesn't work, you can run:
 swipl -g 'pack_install(date_time)'
 ```
 
-```exercism/note
+~~~~exercism/note
 If you're using the online editor, you don't need to manually install anything.
-```
+~~~~
 
 ### Using the date_time package
 
