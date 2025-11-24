@@ -31,9 +31,11 @@ Ad the following code to the top of your solution file to use the `date_time` pa
 :- use_module(library(date_time)).
 ```
 
-### Exercism note
+~~~~exercism/note
 Tip: the [source of the date_time package][date-time-package-source] is well documented and be a great help!
 
+[date-time-package-source]: https://www.swi-prolog.org/pack/file_details/date_time/prolog/date_time.pl?show=src
+~~~~
 
 [built-in-dates-support]: https://www.swi-prolog.org/pldoc/man?section=timedate
 [date-time-package]: https://www.swi-prolog.org/pack/list?p=date_time
