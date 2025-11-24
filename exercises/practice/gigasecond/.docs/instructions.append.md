@@ -39,4 +39,3 @@ Tip: the [source of the date_time package][date-time-package-source] is well doc
 
 [built-in-dates-support]: https://www.swi-prolog.org/pldoc/man?section=timedate
 [date-time-package]: https://www.swi-prolog.org/pack/list?p=date_time
-[date-time-package-source]: https://www.swi-prolog.org/pack/file_details/date_time/prolog/date_time.pl?show=src
