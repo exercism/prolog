@@ -1,6 +1,6 @@
 # Instructions append
 
-# Atoms
+## Atoms
 
 This exercise uses [atoms] to represent the allergens.
 An atom is a unique identifier and typically used when you are only interested in checking for equality.
