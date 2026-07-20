@@ -30,6 +30,10 @@ pending :-
         classify(33550335, Classification),
         Classification == abundant.
 
+    test(perfect_square_abundant_number_is_classified_correctly, condition(pending)) :-
+        classify(196, Classification),
+        Classification == abundant.
+
     test(smallest_prime_deficient_number_is_classified_correctly, condition(pending)) :-
         classify(2, Classification),
         Classification == deficient.
