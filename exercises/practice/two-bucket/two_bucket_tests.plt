@@ -30,6 +30,14 @@ pending :-
         measure(2, 3, 3, one, Measurement),
         Measurement == measurement(moves(2), goalBucket(two), otherBucket(2)).
 
+    test(measure_using_bucket_one_much_bigger_than_bucket_two, condition(pending)) :-
+        measure(5, 1, 2, one, Measurement),
+        Measurement == measurement(moves(6), goalBucket(one), otherBucket(1)).
+
+    test(measure_using_bucket_one_much_smaller_than_bucket_two, condition(pending)) :-
+        measure(3, 15, 9, one, Measurement),
+        Measurement == measurement(moves(6), goalBucket(two), otherBucket(0)).
+
     test(not_possible_to_reach_the_goal, [fail, condition(pending)]) :-
         measure(6, 15, 5, one, _).
 
