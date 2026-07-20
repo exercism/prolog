@@ -27,6 +27,12 @@ pending :-
     test(x_is_only_valid_as_a_check_digit, [fail, condition(pending)]) :-
         isbn("3-598-2X507-9").
 
+    test(only_one_check_digit_is_allowed, [fail, condition(pending)]) :-
+        isbn("3-598-21508-96").
+
+    test(x_is_not_substituted_by_the_value_10, [fail, condition(pending)]) :-
+        isbn("3-598-2X507-5").
+
     test(valid_isbn_without_separating_dashes, condition(pending)) :-
         isbn("3598215088").
 
