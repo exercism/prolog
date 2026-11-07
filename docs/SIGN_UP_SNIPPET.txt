@@ -1,0 +1,15 @@
+most_common_word(Text, Result) :-
+    string_lower(Text, Lower),
+    split_string(Lower, " ", "", Words),
+    empty_assoc(Empty),
+    foldl(count_word, Words, Empty, Counts),
+    assoc_to_list(Counts, Pairs),
+    foldl(pick_best, Pairs, ""-0, Best-Count),
+    format(string(Result), "\"~w\" appears ~w times", [Best, Count]).
+
+count_word(Word, Counts0, Counts) :-
+    ( get_assoc(Word, Counts0, N0) -> N is N0 + 1 ; N = 1 ),
+    put_assoc(Word, Counts0, N, Counts).
+
+pick_best(Word-N, Best0-N0, Best) :-
+    ( N > N0 -> Best = Word-N ; Best = Best0-N0 ).
