@@ -1,17 +1,22 @@
-:- use_module(library(date_time)).
-:- use_module(library(clpfd)).
+weekday_number('Monday', 1).
+weekday_number('Tuesday', 2).
+weekday_number('Wednesday', 3).
+weekday_number('Thursday', 4).
+weekday_number('Friday', 5).
+weekday_number('Saturday', 6).
+weekday_number('Sunday', 7).
 
-days_helper(Month, Date, WeekDay, Dates) :-
-    date_extract(Date, months(Month)),
-    date_add(Date, 1 days, NextDay),
-    days_helper(Month, NextDay, WeekDay, NextDates),
-    (week_day(Date, WeekDay) -> Dates = [Date|NextDates]; Dates = NextDates), !.
-
-days_helper(_, _, _, []).
+month_day(Year, Month, Day) :-
+    between(1, 31, Day),
+    date_time_stamp(date(Year, Month, Day, 0, 0, 0, 0, -, -), Stamp),
+    stamp_date_time(Stamp, date(Year, Month, Day, _, _, _, _, _, _), 0).
 
 days(Year, Month, WeekDay, Dates) :-
-    date_create(Year, Month, 1, Date),
-    days_helper(Month, Date, WeekDay, Dates).
+    weekday_number(WeekDay, Number),
+    findall(date(Year, Month, Day),
+            ( month_day(Year, Month, Day),
+              day_of_the_week(date(Year, Month, Day), Number) ),
+            Dates).
 
 nth1_day(Year, Month, WeekDay, Index, Date) :-
     days(Year, Month, WeekDay, Dates),
@@ -28,7 +33,7 @@ meetup(Year, Month, last, WeekDay, Date) :-
 
 meetup(Year, Month, teenth, WeekDay, Date) :-
     days(Year, Month, WeekDay, Dates),
-    member(Date, Dates), 
-    date_extract(Date, days(Day)),
-    Day #>= 13,
+    member(Date, Dates),
+    Date = date(_, _, Day),
+    Day >= 13,
     !.
